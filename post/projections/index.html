@@ -1,0 +1,394 @@
+<div class="single">
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16-DEV" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="https://syldor.github.io/tuto-carto/css/styles.css">
+    <link rel="stylesheet" href="https://syldor.github.io/tuto-carto/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://syldor.github.io/tuto-carto//index.xml">
+
+    
+    <title>Les Projections - Tuto Carto</title>
+    <meta property='og:title' content="Les Projections - Tuto Carto">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://syldor.github.io/tuto-carto/post/projections/">
+    
+    <meta property="og:image" content="https://syldor.github.io/tuto-carto/images/World-Lambert.bmp">
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <div class="title"><a href="https://syldor.github.io/tuto-carto/">Tuto Carto</a></div>
+    </header>
+
+    <div class="container site">
+
+
+
+  <div class="row">
+    <div class="col-sm-9">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://syldor.github.io/tuto-carto/"/>
+        <meta itemprop="dateModified" content="2017-04-03T16:56:16&#43;07:00">
+        <meta itemprop="headline" content="Les Projections">
+        <meta itemprop="description" content="Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.">
+        <meta itemprop="url" content="https://syldor.github.io/tuto-carto/post/projections/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://syldor.github.io/tuto-carto/images/World-Lambert.bmp" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://syldor.github.io/tuto-carto/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Tuto Carto">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Sylvain Dorey">
+        </div>
+
+        <div class="image" style="background-image: url(https://syldor.github.io/tuto-carto/images/World-Lambert.bmp);"></div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2017-04-03T16:56:16&#43;07:00">Mon, Apr 3, 2017</time>
+          <h1 class="article-title">Les Projections</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          
+
+<p>Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.</p>
+
+<p>Nous allons nous intéresser ici à l’exemple le plus naturel de carte:</p>
+
+<p>Représentation d’une portion de la terre sur une feuille.</p>
+
+<p>Nous vivons dans un monde en 3 dimensions, on peut aller en avant, sur le côté et en hauteur. Sur une feuille en revanche, en dessinant, on ne peut aller que de gauche à droite et de haut en bas. Impossible de creuser la feuille ou d’y mettre du relief. Il n’y a que 2 dimensions.
+Une “portion de la terre” est en 3 dimensions et une “feuille” est à deux dimensions. La définition d’une carte devient alors:</p>
+
+<p>Représentation d’un objet en 3 dimensions sur un support en 2 dimensions.</p>
+
+<p>Il faut donc trouver un moyen pour faire cette conversion. C’est en réalité assez simple, tout ce qui nous intéresse en réalisant une carte basique ce sont les deux dimensions longueur et largeur, on n’a pas besoin de la hauteur. Un immeuble sera représenté par sa longueur et largeur à sa base, et on va omettre sa hauteur. De même la hauteur d’une montagne ou la profondeur d’un océan ne seront pas affichés dans un premier temps. Ils le seront par d’autres moyen, à l’aide de couleurs et de symboles.</p>
+
+<p>Tout aurait été simple si l’on avait été dans l’antiquité à considérer que la terre est plate. Mais elle est ronde et a donc une courbure qui vient contrarier notre représentation: se contenter de mettre de côté la taille des objets sur Terre ne suffit plus pour la représenter. Il faut donc trouver une méthode pour aplatir la réalité, pour qu’elle rentre en deux dimensions. On appelle celà une projection géographique:</p>
+
+<p>Trouver une formule qui a une longitude/latitude sur la Terre va donner une coordonnées X, Y sur un plan.</p>
+
+<p>Pour cela, on a recours à deux étapes.</p>
+
+<h2 id="1è-étape-trouver-une-forme-pour-la-terre:bc646ba2fe612c0702e39589e75e6518">1è étape: trouver une forme pour la Terre</h2>
+
+<p>La première étape consiste à définir une forme pour la Terre, il s’agit de la modéliser. On doit simplifier certaines de ses caractéristiques pour en avoir un modèle utilisable. Deux éléments seront simplifiés:
+La forme à la surface
+La forme générale.</p>
+
+<p>La terre n’est pas statique, sa surface bouge en fonction des vents, les océans sont soumis aux marées. On va fixer ces éléments en une représentation statique, immobile, de référence, qu’on appelle géoïde. On la définit en considérant la forme qu’auraient les océans s’ils n’étaient soumis qu’à l’attraction de la Terre et à sa rotation, et on étend de manière similaire la définition aux continents. On se retrouve alors avec une sorte de boule toute lisse mais très irrégulière.</p>
+
+<p>Cette boule qu’est notre géoïde n’en est en fait pas une: la Terre est ronde, mais elle n’est pas parfaitement ronde. Elle est un peu aplatie au niveau des pôles par exemple, on peut l’appeler “Patatoïde” pour désigner une forme plus ou moins ronde. On a cependant besoin d’un modèle pour pouvoir effectuer nos calculs dessus, il faut donc trouver une forme régulière sur laquelle on pourra s’appuyer. Une fois la forme sélectionnée, ses dimensions seront celles qui colleront le mieux à notre géoïde.</p>
+
+<p>Le premier modèle et le plus simple est de considérer une sphère. On a vu que ce modèle n’était pas le bon puisque la Terre est aplatie au pôle. Pour créer une sphère de rayon R, on prend un cercle de Rayon R qu’on fait tourner autour d’un de ses diamètres.</p>
+
+<p><img src="/images/projections/sphere_proj.png" alt="Sphère en 3D" /></p>
+
+<p>Plus proche est ce qu’on appelle un ellipsoïde. Avec cet ellipsoïde, on a bien une sphère aplatie aux pôles.</p>
+
+<p><img src="/images/projections/ellipsoide_proj.png" alt="Ellipse en 3D" /></p>
+
+<p>Pour créer un ellipsoïde, on utilise une ellipse qu’on fait tourner autour de son grand axe. Ainsi, pour caractériser un ellipsoïde, on se contente de donner les dimensions de son grand axe et de son petit axe, c’est suffisant pour savoir de quoi on parle. On en donne généralement le demi-grand axe et le demi-petit axe.</p>
+
+<p>Quelques exemples d’ellipsoïdes</p>
+
+<table>
+<thead>
+<tr>
+<th>Nom</th>
+<th>Demi Grand Axe</th>
+<th>Demi Petit Axe</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Clarke 1880 IGN</td>
+<td>6 378 249.2 m</td>
+<td>6 356 515 m</td>
+</tr>
+
+<tr>
+<td>WGS 84</td>
+<td>6 378 137,0</td>
+<td>6 356 752,3</td>
+</tr>
+</tbody>
+</table>
+
+<p>On a maintenant un ellipsoïde qu’on va utiliser pour modéliser notre Terre, le géoïde. Il faut maintenant décider de comment les placer l’une par rapport à l’autre. On peut décider de faire coïncider leurs centres et leurs axes, mais il est possible aussi qu’il y ait des décalages pour que les deux formes se superposent plus exactement.</p>
+
+<p>On appelle datum la donnée d’un ellipsoïde, la position de son centre ainsi que l’orientation de ses axes. Au lieu de la position de son centre on peut aussi donner le point où le géoïde et l’ellipsoïde sont tangents, leur point commun à la surface du globe. On l’appelle le point fondamental.</p>
+
+<ul>
+<li><p>Deux exemples de datum basés sur les ellipsoïdes qu’on a déjà rencontré:</p></li>
+
+<li><p>Nouvelle Triangulation de la France: utilisée par l’IGN jusqu’à récemment, elle se base sur l’ellipsoïde Clarke 1880 IGN, et son point de rencontre avec le géoïde (point fondamental) est le Panthéon à Paris.
+WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système GPS actuel.</p></li>
+</ul>
+
+<h2 id="2è-étape-projeter-en-2-dimensions:bc646ba2fe612c0702e39589e75e6518">2è étape: Projeter en 2-dimensions</h2>
+
+<p>On se retrouve à présent avec une modélisation de la Terre par un ellipsoïde ayant une position bien précise dans l’espace ainsi qu’une orientation. On va maintenant chercher une méthode pour que chaque point de l’ellipsoïde puisse se retrouver sur un espace en 2 dimensions. On veut projeter notre sphère sur une surface plane.</p>
+
+<p>On peut imaginer que la sphère rayonne comme une ampoule électrique et qu’on y place du papier photographique autour. Ce papier photographique est ensuite récupéré avec l’image que la Terre a projeté dessus et devient alors notre carte. Mais quelle forme a ce papier photographique ? Il y a trois façons de faire:</p>
+
+<ul>
+<li>Projection conique</li>
+<li>Projection cylindrique</li>
+<li>Projection azimutale</li>
+</ul>
+
+<p><img src="/images/projections/diff_volumes.png" alt="Sphère en 3D" /></p>
+
+<p>Selon que le papier photographique est un cylindre, un cône ou un plan. On a choisi ces surfaces parce qu’elles sont dites développables, on peut par exemple étaler un cylindre sur un plan sans déformation de sa surface, en le découpant et en le déroulant. La sphère n’est pas une surface développable, sinon on ne se créerait pas toutes ces difficultés.</p>
+
+<p>Pour chaque type de projection, on peut placer la surface développable différemment, créant ainsi de multiples projections.</p>
+
+<p>Le choix d’une projection dépend de l’utilisation finale de la carte: cherche-t-on à conserver les formes ou les surfaces ? A quel endroit se trouve la zone que l’on souhaite cartographier ? Plutôt proche des pôles ou des équateurs ? Selon les réponses à ces différentes questions, une projection va être choisie plutôt qu’une autre. En effet, il n’y a pas une projection qui va posséder toutes ces propriétés.</p>
+
+<p>Les projections qui conservent les surfaces sont dites équivalentes.</p>
+
+<p>Les projections qui conservent les angles (et donc les formes) sont dites conformes. Un cap, un virage sur la carte sera le même en réalité.</p>
+
+<p>Une projection ne peut pas être à la fois conforme et équivalente.</p>
+
+<p>Quelques exemples de projections:</p>
+
+<p>Projection conique de Lambert</p>
+
+<p><img src="/images/projections/lambert.bmp" alt="Sphère en 3D" /></p>
+
+<p>Il s’agit d’une projection conique, ainsi les méridiens convergent tous vers un point unique et le pôle sud prend toute la place en bas de la carte. Elle préserve les angles, ainsi elle fut utilisée par l’artillerie française pendant la guerre 14-18: l’angle de tir en réalité est le même que l’angle de tir sur la carte. C’est la projection officielle pour la france:</p>
+
+<p><img src="/images/projections/France-Lambert.bmp" alt="France Lambert" /></p>
+
+<p>Projection de Mercator</p>
+
+<p>Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.</p>
+
+<p><img src="/images/projections/Mercator_full.bmp" alt="Mercator" /></p>
+
+<p>Comme la projection de Lambert, elle conserve les angles et les formes. C’est ainsi la projection utilisée majoritairement pour la navigation, puisque les caps sur la carte sont les mêmes qu’en réalité.</p>
+
+<p>En revanche, les pôles présentent des distorsions très importantes en surface.Le Groënland a ainsi une surface comparable à celle de l’Afrique alors qu’il est en réalité 14 fois plus petit, et l’antarctique semble aussi grande que tout le reste des terres émergées.</p>
+
+<p>C’est cette projection, à quelques détails près, qui est utilisée pour les cartes en lignes telles que Google Maps.</p>
+
+<p>Rem: Les cartes en ligne utilisent la projection dite Web Mercator, qui coïncide avec Mercator à petite échelle (peu zoomé, carte du monde), mais utilise une sphère au lieu d’un ellipsoïde pour les grandes échelles (très zoomé, carte de rue).</p>
+
+<p>Projection de Gall-Peters</p>
+
+<p>La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.</p>
+
+<p><img src="/images/projections/Gall-Peters.bmp" alt="Gall-Peters" /></p>
+
+<p>Ainsi les surfaces représentées sont proches de la réalité et permettent de mieux visualiser les superficies réelles des différentes pays/continents. Ainsi, on peut comparer le groenland et l’afrique, qui sont de superficie très différente, ce que la projection Mercator ne rend pas.</p>
+
+<p><img src="/images/projections/comparaison.png" alt="comparaison" /></p>
+
+<p>En revanche, Gall-Peters présente de fortes distorsions de formes.</p>
+
+<p>Projection Gnomonique</p>
+
+<p>La dernière projection présentée est une projection azimutale, à savoir la projection de la sphère sur un plan.</p>
+
+<p>Cette projection transforme les grands cercles en droites, ainsi les trajectoires circulaires comme celles des météorites apparaissent rectilignes.</p>
+
+<p>Une autre propriété intéressante est que le chemin le plus court sur une sphère étant un arc de cercle, ce sont des droites sur les cartes gnomoniques. Ce n’est pas le cas sur les autres projections, ainsi les trajectoires des avions paraissent incurvées quand elles sont représentées sur une projection différente alors qu’ils vont en réalité au plus court.</p>
+
+<p><img src="/images/projections/gnomonique.bmp" alt="Gnomonique" /></p>
+
+<p>Récapitulatif</p>
+
+<p>Ainsi on a vu que pour visualiser des données géographiques sur une surface 2D, on a besoin de choisir soi-même une projection, à savoir un datum (ellipsoïde + sa position par rapport à la Terre) et une projection.
+Mercator est la projection la plus communément utilisée, mais il peut être utile d’en considérer d’autres:
+La radiogoniométrie, qui calcule la direction d’arrivée des ondes radios, utilise la projection goniométrique pour représenter les trajectoires.
+Les sciences politiques peuvent utiliser une projection équivalente pour mieux apprécier les superficies des différents pays.</p>
+
+<p>Les différentes projections vues dans ce chapitre sont regroupées dans le tableau suivant.</p>
+
+<table>
+<thead>
+<tr>
+<th>Nom</th>
+<th>Surface développable</th>
+<th>Type</th>
+<th>Conserve</th>
+<th>Remarque</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Conique de Lambert</td>
+<td>Cône</td>
+<td>Conforme</td>
+<td>Les formes, les angles</td>
+<td>Officielle pour la France</td>
+</tr>
+
+<tr>
+<td>Mercator</td>
+<td>Cylindre</td>
+<td>Conforme</td>
+<td>Les formes, les angles</td>
+<td>Utilisée sur les cartes en ligne</td>
+</tr>
+
+<tr>
+<td>Gall-Peters</td>
+<td>Cylindre</td>
+<td>Equivalente</td>
+<td>Les surfaces</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Gnomonique</td>
+<td>Plan</td>
+<td>Aphylactique (ni conforme ni équivalente)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Le plus court chemin entre deux points est une droite</p>
+
+<p>Il existe des projections plus exotiques utilisant d’autres surfaces que les trois citées ci-dessus, on recense plus de 200 projections.</p>
+
+        </div>
+
+
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f&t=Les%20Projections" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f&text=Les%20Projections&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f&title=Les%20Projections" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'tuto-carto';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          
+        </aside>
+
+      </article>
+    </div>
+
+    <div class="col-sm-3">
+      <aside class="site">
+
+  
+  <div class="section">
+    <header><div class="title">TableOfContents</div></header>
+    <div class="list-default"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1è-étape-trouver-une-forme-pour-la-terre:bc646ba2fe612c0702e39589e75e6518">1è étape: trouver une forme pour la Terre</a></li>
+<li><a href="#2è-étape-projeter-en-2-dimensions:bc646ba2fe612c0702e39589e75e6518">2è étape: Projeter en 2-dimensions</a></li>
+</ul></li>
+</ul>
+</nav></div>
+  </div>
+  
+
+  
+
+  <div class="section">
+    <header><div class="title">LatestPosts</div></header>
+    <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="https://syldor.github.io/tuto-carto/post/projections/" class="clearfix">
+    <div class="image" style="background-image: url(https://syldor.github.io/tuto-carto/images/World-Lambert.bmp);"></div>
+    <div class="detail">
+      <time>Mon, Apr 3, 2017</time>
+      <h2 class="title">Les Projections</h2>
+      <div class="summary">Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+    </div>
+  </div>
+
+  
+  <div class="section taxonomies">
+    <header><div class="title">category</div></header>
+    <div class="content">
+      
+    </div>
+  </div>
+  
+  <div class="section taxonomies">
+    <header><div class="title">tag</div></header>
+    <div class="content">
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+    </div>
+
+  </div>
+
+      </div>
+
+    <footer class="site">
+      <p>&copy; 2017 Sylvain Dorey</p>
+      <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+
+</div>
