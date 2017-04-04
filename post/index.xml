@@ -18,6 +18,8 @@
           <guid>https://syldor.github.io/tuto-carto/post/projections/</guid>
           <description>
 
+&lt;h1 id=&#34;méthode:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Méthode&lt;/h1&gt;
+
 &lt;p&gt;Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.&lt;/p&gt;
 
 &lt;p&gt;Nous allons nous intéresser ici à l’exemple le plus naturel de carte:&lt;/p&gt;
@@ -59,28 +61,28 @@ La forme générale.&lt;/p&gt;
 
 &lt;p&gt;Quelques exemples d’ellipsoïdes&lt;/p&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Nom&lt;/th&gt;
-&lt;th&gt;Demi Grand Axe&lt;/th&gt;
-&lt;th&gt;Demi Petit Axe&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nom&lt;/th&gt;
+            &lt;th&gt;Demi Grand Axe&lt;/th&gt;
+            &lt;th&gt;Demi Petit Axe&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
 
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Clarke 1880 IGN&lt;/td&gt;
-&lt;td&gt;6 378 249.2 m&lt;/td&gt;
-&lt;td&gt;6 356 515 m&lt;/td&gt;
-&lt;/tr&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Clarke 1880 IGN&lt;/td&gt;
+            &lt;td&gt;6 378 249.2 m&lt;/td&gt;
+            &lt;td&gt;6 356 515 m&lt;/td&gt;
+        &lt;/tr&gt;
 
-&lt;tr&gt;
-&lt;td&gt;WGS 84&lt;/td&gt;
-&lt;td&gt;6 378 137,0&lt;/td&gt;
-&lt;td&gt;6 356 752,3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;WGS 84&lt;/td&gt;
+            &lt;td&gt;6 378 137,0&lt;/td&gt;
+            &lt;td&gt;6 356 752,3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;p&gt;On a maintenant un ellipsoïde qu’on va utiliser pour modéliser notre Terre, le géoïde. Il faut maintenant décider de comment les placer l’une par rapport à l’autre. On peut décider de faire coïncider leurs centres et leurs axes, mais il est possible aussi qu’il y ait des décalages pour que les deux formes se superposent plus exactement.&lt;/p&gt;
@@ -120,9 +122,9 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Une projection ne peut pas être à la fois conforme et équivalente.&lt;/p&gt;
 
-&lt;p&gt;Quelques exemples de projections:&lt;/p&gt;
+&lt;h1 id=&#34;quelques-exemples-de-projections:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Quelques exemples de projections&lt;/h1&gt;
 
-&lt;p&gt;Projection conique de Lambert&lt;/p&gt;
+&lt;h2 id=&#34;projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection conique de Lambert&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/lambert.bmp&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
@@ -130,7 +132,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/France-Lambert.bmp&#34; alt=&#34;France Lambert&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Projection de Mercator&lt;/p&gt;
+&lt;h2 id=&#34;projection-de-mercator:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection de Mercator&lt;/h2&gt;
 
 &lt;p&gt;Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.&lt;/p&gt;
 
@@ -144,7 +146,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Rem: Les cartes en ligne utilisent la projection dite Web Mercator, qui coïncide avec Mercator à petite échelle (peu zoomé, carte du monde), mais utilise une sphère au lieu d’un ellipsoïde pour les grandes échelles (très zoomé, carte de rue).&lt;/p&gt;
 
-&lt;p&gt;Projection de Gall-Peters&lt;/p&gt;
+&lt;h2 id=&#34;projection-de-gall-peters:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection de Gall-Peters&lt;/h2&gt;
 
 &lt;p&gt;La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.&lt;/p&gt;
 
@@ -156,7 +158,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;En revanche, Gall-Peters présente de fortes distorsions de formes.&lt;/p&gt;
 
-&lt;p&gt;Projection Gnomonique&lt;/p&gt;
+&lt;h2 id=&#34;projection-gnomonique:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection Gnomonique&lt;/h2&gt;
 
 &lt;p&gt;La dernière projection présentée est une projection azimutale, à savoir la projection de la sphère sur un plan.&lt;/p&gt;
 
@@ -166,7 +168,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/gnomonique.bmp&#34; alt=&#34;Gnomonique&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Récapitulatif&lt;/p&gt;
+&lt;h1 id=&#34;récapitulatif:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Récapitulatif&lt;/h1&gt;
 
 &lt;p&gt;Ainsi on a vu que pour visualiser des données géographiques sur une surface 2D, on a besoin de choisir soi-même une projection, à savoir un datum (ellipsoïde + sa position par rapport à la Terre) et une projection.
 Mercator est la projection la plus communément utilisée, mais il peut être utile d’en considérer d’autres:
@@ -175,50 +177,50 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
 
 &lt;p&gt;Les différentes projections vues dans ce chapitre sont regroupées dans le tableau suivant.&lt;/p&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Nom&lt;/th&gt;
-&lt;th&gt;Surface développable&lt;/th&gt;
-&lt;th&gt;Type&lt;/th&gt;
-&lt;th&gt;Conserve&lt;/th&gt;
-&lt;th&gt;Remarque&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+&lt;table class=&#34;table&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nom&lt;/th&gt;
+            &lt;th&gt;Surface développable&lt;/th&gt;
+            &lt;th&gt;Type&lt;/th&gt;
+            &lt;th&gt;Conserve&lt;/th&gt;
+            &lt;th&gt;Remarque&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
 
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Conique de Lambert&lt;/td&gt;
-&lt;td&gt;Cône&lt;/td&gt;
-&lt;td&gt;Conforme&lt;/td&gt;
-&lt;td&gt;Les formes, les angles&lt;/td&gt;
-&lt;td&gt;Officielle pour la France&lt;/td&gt;
-&lt;/tr&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Conique de Lambert&lt;/td&gt;
+            &lt;td&gt;Cône&lt;/td&gt;
+            &lt;td&gt;Conforme&lt;/td&gt;
+            &lt;td&gt;Les formes, les angles&lt;/td&gt;
+            &lt;td&gt;Officielle pour la France&lt;/td&gt;
+        &lt;/tr&gt;
 
-&lt;tr&gt;
-&lt;td&gt;Mercator&lt;/td&gt;
-&lt;td&gt;Cylindre&lt;/td&gt;
-&lt;td&gt;Conforme&lt;/td&gt;
-&lt;td&gt;Les formes, les angles&lt;/td&gt;
-&lt;td&gt;Utilisée sur les cartes en ligne&lt;/td&gt;
-&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mercator&lt;/td&gt;
+            &lt;td&gt;Cylindre&lt;/td&gt;
+            &lt;td&gt;Conforme&lt;/td&gt;
+            &lt;td&gt;Les formes, les angles&lt;/td&gt;
+            &lt;td&gt;Utilisée sur les cartes en ligne&lt;/td&gt;
+        &lt;/tr&gt;
 
-&lt;tr&gt;
-&lt;td&gt;Gall-Peters&lt;/td&gt;
-&lt;td&gt;Cylindre&lt;/td&gt;
-&lt;td&gt;Equivalente&lt;/td&gt;
-&lt;td&gt;Les surfaces&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Gall-Peters&lt;/td&gt;
+            &lt;td&gt;Cylindre&lt;/td&gt;
+            &lt;td&gt;Equivalente&lt;/td&gt;
+            &lt;td&gt;Les surfaces&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
 
-&lt;tr&gt;
-&lt;td&gt;Gnomonique&lt;/td&gt;
-&lt;td&gt;Plan&lt;/td&gt;
-&lt;td&gt;Aphylactique (ni conforme ni équivalente)&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Gnomonique&lt;/td&gt;
+            &lt;td&gt;Plan&lt;/td&gt;
+            &lt;td&gt;Aphylactique (ni conforme ni équivalente)&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;p&gt;Le plus court chemin entre deux points est une droite&lt;/p&gt;

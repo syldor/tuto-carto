@@ -44,7 +44,7 @@
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://syldor.github.io/tuto-carto/"/>
         <meta itemprop="dateModified" content="2017-04-03T16:56:16&#43;07:00">
         <meta itemprop="headline" content="Les Projections">
-        <meta itemprop="description" content="Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.">
+        <meta itemprop="description" content="Méthode Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.">
         <meta itemprop="url" content="https://syldor.github.io/tuto-carto/post/projections/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="https://syldor.github.io/tuto-carto/images/World-Lambert.bmp" />
@@ -66,12 +66,13 @@
         <div class="image" style="background-image: url(https://syldor.github.io/tuto-carto/images/World-Lambert.bmp);"></div>
 
         <header class="article-header">
-          <time itemprop="datePublished" pubdate="pubdate" datetime="2017-04-03T16:56:16&#43;07:00">Mon, Apr 3, 2017</time>
           <h1 class="article-title">Les Projections</h1>
         </header>
 
         <div class="article-body" itemprop="articleBody">
           
+
+<h1 id="méthode:bc646ba2fe612c0702e39589e75e6518">Méthode</h1>
 
 <p>Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.</p>
 
@@ -114,28 +115,28 @@ La forme générale.</p>
 
 <p>Quelques exemples d’ellipsoïdes</p>
 
-<table>
-<thead>
-<tr>
-<th>Nom</th>
-<th>Demi Grand Axe</th>
-<th>Demi Petit Axe</th>
-</tr>
-</thead>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Demi Grand Axe</th>
+            <th>Demi Petit Axe</th>
+        </tr>
+    </thead>
 
-<tbody>
-<tr>
-<td>Clarke 1880 IGN</td>
-<td>6 378 249.2 m</td>
-<td>6 356 515 m</td>
-</tr>
+    <tbody>
+        <tr>
+            <td>Clarke 1880 IGN</td>
+            <td>6 378 249.2 m</td>
+            <td>6 356 515 m</td>
+        </tr>
 
-<tr>
-<td>WGS 84</td>
-<td>6 378 137,0</td>
-<td>6 356 752,3</td>
-</tr>
-</tbody>
+        <tr>
+            <td>WGS 84</td>
+            <td>6 378 137,0</td>
+            <td>6 356 752,3</td>
+        </tr>
+    </tbody>
 </table>
 
 <p>On a maintenant un ellipsoïde qu’on va utiliser pour modéliser notre Terre, le géoïde. Il faut maintenant décider de comment les placer l’une par rapport à l’autre. On peut décider de faire coïncider leurs centres et leurs axes, mais il est possible aussi qu’il y ait des décalages pour que les deux formes se superposent plus exactement.</p>
@@ -175,9 +176,9 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>Une projection ne peut pas être à la fois conforme et équivalente.</p>
 
-<p>Quelques exemples de projections:</p>
+<h1 id="quelques-exemples-de-projections:bc646ba2fe612c0702e39589e75e6518">Quelques exemples de projections</h1>
 
-<p>Projection conique de Lambert</p>
+<h2 id="projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518">Projection conique de Lambert</h2>
 
 <p><img src="/tuto-carto/images/projections/lambert.bmp" alt="Sphère en 3D" /></p>
 
@@ -185,7 +186,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p><img src="/tuto-carto/images/projections/France-Lambert.bmp" alt="France Lambert" /></p>
 
-<p>Projection de Mercator</p>
+<h2 id="projection-de-mercator:bc646ba2fe612c0702e39589e75e6518">Projection de Mercator</h2>
 
 <p>Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.</p>
 
@@ -199,7 +200,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>Rem: Les cartes en ligne utilisent la projection dite Web Mercator, qui coïncide avec Mercator à petite échelle (peu zoomé, carte du monde), mais utilise une sphère au lieu d’un ellipsoïde pour les grandes échelles (très zoomé, carte de rue).</p>
 
-<p>Projection de Gall-Peters</p>
+<h2 id="projection-de-gall-peters:bc646ba2fe612c0702e39589e75e6518">Projection de Gall-Peters</h2>
 
 <p>La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.</p>
 
@@ -211,7 +212,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>En revanche, Gall-Peters présente de fortes distorsions de formes.</p>
 
-<p>Projection Gnomonique</p>
+<h2 id="projection-gnomonique:bc646ba2fe612c0702e39589e75e6518">Projection Gnomonique</h2>
 
 <p>La dernière projection présentée est une projection azimutale, à savoir la projection de la sphère sur un plan.</p>
 
@@ -221,7 +222,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p><img src="/tuto-carto/images/projections/gnomonique.bmp" alt="Gnomonique" /></p>
 
-<p>Récapitulatif</p>
+<h1 id="récapitulatif:bc646ba2fe612c0702e39589e75e6518">Récapitulatif</h1>
 
 <p>Ainsi on a vu que pour visualiser des données géographiques sur une surface 2D, on a besoin de choisir soi-même une projection, à savoir un datum (ellipsoïde + sa position par rapport à la Terre) et une projection.
 Mercator est la projection la plus communément utilisée, mais il peut être utile d’en considérer d’autres:
@@ -230,50 +231,50 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
 
 <p>Les différentes projections vues dans ce chapitre sont regroupées dans le tableau suivant.</p>
 
-<table>
-<thead>
-<tr>
-<th>Nom</th>
-<th>Surface développable</th>
-<th>Type</th>
-<th>Conserve</th>
-<th>Remarque</th>
-</tr>
-</thead>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Surface développable</th>
+            <th>Type</th>
+            <th>Conserve</th>
+            <th>Remarque</th>
+        </tr>
+    </thead>
 
-<tbody>
-<tr>
-<td>Conique de Lambert</td>
-<td>Cône</td>
-<td>Conforme</td>
-<td>Les formes, les angles</td>
-<td>Officielle pour la France</td>
-</tr>
+    <tbody>
+        <tr>
+            <td>Conique de Lambert</td>
+            <td>Cône</td>
+            <td>Conforme</td>
+            <td>Les formes, les angles</td>
+            <td>Officielle pour la France</td>
+        </tr>
 
-<tr>
-<td>Mercator</td>
-<td>Cylindre</td>
-<td>Conforme</td>
-<td>Les formes, les angles</td>
-<td>Utilisée sur les cartes en ligne</td>
-</tr>
+        <tr>
+            <td>Mercator</td>
+            <td>Cylindre</td>
+            <td>Conforme</td>
+            <td>Les formes, les angles</td>
+            <td>Utilisée sur les cartes en ligne</td>
+        </tr>
 
-<tr>
-<td>Gall-Peters</td>
-<td>Cylindre</td>
-<td>Equivalente</td>
-<td>Les surfaces</td>
-<td></td>
-</tr>
+        <tr>
+            <td>Gall-Peters</td>
+            <td>Cylindre</td>
+            <td>Equivalente</td>
+            <td>Les surfaces</td>
+            <td></td>
+        </tr>
 
-<tr>
-<td>Gnomonique</td>
-<td>Plan</td>
-<td>Aphylactique (ni conforme ni équivalente)</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+        <tr>
+            <td>Gnomonique</td>
+            <td>Plan</td>
+            <td>Aphylactique (ni conforme ni équivalente)</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
 </table>
 
 <p>Le plus court chemin entre deux points est une droite</p>
@@ -321,11 +322,19 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
     <header><div class="title">TableOfContents</div></header>
     <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#méthode:bc646ba2fe612c0702e39589e75e6518">Méthode</a>
 <ul>
 <li><a href="#1è-étape-trouver-une-forme-pour-la-terre:bc646ba2fe612c0702e39589e75e6518">1è étape: trouver une forme pour la Terre</a></li>
 <li><a href="#2è-étape-projeter-en-2-dimensions:bc646ba2fe612c0702e39589e75e6518">2è étape: Projeter en 2-dimensions</a></li>
 </ul></li>
+<li><a href="#quelques-exemples-de-projections:bc646ba2fe612c0702e39589e75e6518">Quelques exemples de projections</a>
+<ul>
+<li><a href="#projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518">Projection conique de Lambert</a></li>
+<li><a href="#projection-de-mercator:bc646ba2fe612c0702e39589e75e6518">Projection de Mercator</a></li>
+<li><a href="#projection-de-gall-peters:bc646ba2fe612c0702e39589e75e6518">Projection de Gall-Peters</a></li>
+<li><a href="#projection-gnomonique:bc646ba2fe612c0702e39589e75e6518">Projection Gnomonique</a></li>
+</ul></li>
+<li><a href="#récapitulatif:bc646ba2fe612c0702e39589e75e6518">Récapitulatif</a></li>
 </ul>
 </nav></div>
   </div>
