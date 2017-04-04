@@ -6,8 +6,64 @@
     <language>en-us</language>
     <author>Sylvain Dorey</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-04 14:34:29 &#43;0700 ICT</updated>
+    <updated>2017-04-04 15:20:35 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Longitude et Latitude</title>
+          <link>https://tuto-carto.fr/post/longitude-latitude/</link>
+          <pubDate>Tue, 04 Apr 2017 15:20:35 ICT</pubDate>
+          <author>Sylvain Dorey</author>
+          <guid>https://tuto-carto.fr/post/longitude-latitude/</guid>
+          <description>
+
+&lt;h1 id=&#34;les-coordonnées-sur-le-globe:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;Les coordonnées sur le globe&lt;/h1&gt;
+
+&lt;p&gt;La longitude et latitude permettent de donner une adresse à tous les lieux de la Terre. Il s’agit donc de repérer un endroit sur la sphère terrestre. Un point se repère par la distance à l’équateur (latitude) et la distance au Méridien de Greenwitch (longitude). Ces données sont en degrés (°): un degré mesure l’écartement d’un angle, comme par exemple l’angle droit est de 90° dans un triangle rectangle.&lt;/p&gt;
+
+&lt;p&gt;Note: L’expression française “sous d’autres latitudes” fait bien référence à des endroits plus chauds, plus proches de l’équateur, que là où nous nous trouvons. Ainsi il est facile de se souvenir que la latitude désigne la distance à l’équateur.
+Ce sont des angles, formés avec des lignes caractéristiques de la Terre comme l’équateur.&lt;/p&gt;
+
+&lt;h2 id=&#34;la-latitude:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;La latitude&lt;/h2&gt;
+
+&lt;p&gt;La latitude d’un point représente l’angle entre le plan de l’équateur et une droite passant par le centre de la Terre et l’endroit du point à repérer.
+Cet angle varie entre 0 et 90° (angle droit) et on précise s’il s’agit de l’hémisphère Nord ou Sud. Ainsi la latitude de la tour Eiffel est 48°85 Nord.
+Les cercles de même latitude sont appelées parallèles et sont des cercles allant d’Est en Ouest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/longlat/latitude.png&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;la-longitude:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;La longitude&lt;/h2&gt;
+
+&lt;p&gt;La longitude d’un point représente sa position Est-Ouest. Il s’agit de l’angle formé avec les méridien de référence, Greenwitch. Il s’agit d’un angle entre 0 et 180°, avec l’indication Est ou Ouest selon qu’on se trouve à droite ou à gauche du méridien de référence.
+La longitude de la Tour Eiffel est 2.29° Est.
+Les zones de même longitude sont appelées méridiens et sont des demi-cercles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/longlat/longitude.png&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;degrés-et-sous-degrés:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;Degrés et sous-degrés&lt;/h2&gt;
+
+&lt;p&gt;Il y a deux façons d’écrire les degrés, plus particulièrement les sous-degrés, c’est à dire ce qui vient après la virgule.
+1° représente &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;360&lt;/sub&gt; d’un tour complet.
+Mais plutôt que de diviser 1° en 10 (système décimal), on fait comme pour les heures, on les divise en 60, et on appelle les unités des minutes d’arc (plutôt que des minutes, qui sont des unités de temps), de symbole ‘. Cette bizarrerie vient de Babyloniens qui comptaient en base 60 et non comme nous en base 10.
+Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d’arc (symbole ‘‘).&lt;/p&gt;
+
+&lt;p&gt;Ainsi, on note ainsi les coordonnées de la Tour Eiffel:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;48° 51&amp;rsquo; 29’’ N, ‎2° 17&amp;rsquo; 40’’ E&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On peut cependant transformer les sous-degrés en sous-degrés décimaux pour que les choses soient plus simples. Comme 1h30 = 1.5h, on écrit:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;48.8584° N, 2.2945° E&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ces deux notations sont équivalentes mais ne doivent pas être confondues. Dans un cas il y a ° à la fin des premiers chiffres, dans l’autre ° est à la fin de tout le nombre, collé à la lettre.&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -64,7 +120,7 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
 &lt;p&gt;C’est la solution idéale pour des petits projets personnels. Si la carte avait besoin d’éléments plus complexes ou aurait vocation à être vue par des milliers de personnes tous les jours, d’autres application peuvent être envisagées, dont certaines fonctionnalités sont payantes. La plupart proposent gratuitement des fonctions similaires à Google My Maps. En voici quelques noms:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.animaps.com/#!home&#34;&gt;AniMaps&lt;/a&gt;: Cette appication permet de créer des cartes animées, dont les éléments se déplacent. L’utilisateur voit alors la carte comme un film.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.animaps.com/#!home&#34;&gt;AniMaps&lt;/a&gt;: Cette application permet de créer des cartes animées, dont les éléments se déplacent. L’utilisateur voit alors la carte comme un film.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.scribblemaps.com/&#34;&gt;ScribbleMaps&lt;/a&gt;: Permet d’ajouter du texte, des images, etc.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zeemaps.com/&#34;&gt;ZeeMaps&lt;/a&gt;: Permet d’ajouter du son sur chaque repère, d’en choisir les icônes, etc.&lt;/li&gt;
 &lt;/ul&gt;
