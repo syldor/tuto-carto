@@ -10,26 +10,26 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <link rel="stylesheet" href="https://syldor.github.io/tuto-carto/css/styles.css">
-    <link rel="stylesheet" href="https://syldor.github.io/tuto-carto/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://syldor.github.io/tuto-carto//index.xml">
+    <link rel="stylesheet" href="https://tuto-carto.fr/css/styles.css">
+    <link rel="stylesheet" href="https://tuto-carto.fr/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://tuto-carto.fr//index.xml">
 
     
-    <title>Les Projections - Tuto Carto</title>
-    <meta property='og:title' content="Les Projections - Tuto Carto">
+    <title>Les Projections - Tuto Carto: blog autour des cartes</title>
+    <meta property='og:title' content="Les Projections - Tuto Carto: blog autour des cartes">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://syldor.github.io/tuto-carto/post/projections/">
+    <meta property="og:url" content="https://tuto-carto.fr/post/projections/">
     
-    <meta property="og:image" content="https://syldor.github.io/tuto-carto/images/World-Lambert.bmp">
+    <meta property="og:image" content="https://tuto-carto.fr/images/World-Lambert.bmp">
 
   </head>
 
   <body>
 
     <header class="site">
-      <div class="title"><a href="https://syldor.github.io/tuto-carto/">Tuto Carto</a></div>
+      <div class="title"><a href="https://tuto-carto.fr/">Tuto Carto: blog autour des cartes</a></div>
     </header>
 
     <div class="container site">
@@ -41,29 +41,29 @@
 
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://syldor.github.io/tuto-carto/"/>
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://tuto-carto.fr/"/>
         <meta itemprop="dateModified" content="2017-04-03T16:56:16&#43;07:00">
         <meta itemprop="headline" content="Les Projections">
         <meta itemprop="description" content="Méthode Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.">
-        <meta itemprop="url" content="https://syldor.github.io/tuto-carto/post/projections/">
+        <meta itemprop="url" content="https://tuto-carto.fr/post/projections/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="https://syldor.github.io/tuto-carto/images/World-Lambert.bmp" />
+          <meta itemprop="url" content="https://tuto-carto.fr/images/World-Lambert.bmp" />
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="800">
         </div>
         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-            <meta itemprop="url" content="https://syldor.github.io/tuto-carto/images/logo.jpg">
+            <meta itemprop="url" content="https://tuto-carto.fr/images/logo.jpg">
             <meta itemprop="width" content="100">
             <meta itemprop="height" content="100">
           </div>
-          <meta itemprop="name" content="Tuto Carto">
+          <meta itemprop="name" content="Tuto Carto: blog autour des cartes">
         </div>
         <div itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Sylvain Dorey">
         </div>
 
-        <div class="image" style="background-image: url(https://syldor.github.io/tuto-carto/images/World-Lambert.bmp);"></div>
+        <div class="image" style="background-image: url(https://tuto-carto.fr/images/World-Lambert.bmp);"></div>
 
         <header class="article-header">
           <h1 class="article-title">Les Projections</h1>
@@ -105,11 +105,11 @@ La forme générale.</p>
 
 <p>Le premier modèle et le plus simple est de considérer une sphère. On a vu que ce modèle n’était pas le bon puisque la Terre est aplatie au pôle. Pour créer une sphère de rayon R, on prend un cercle de Rayon R qu’on fait tourner autour d’un de ses diamètres.</p>
 
-<p><img src="/tuto-carto/images/projections/sphere_proj.png" alt="Sphère en 3D" /></p>
+<p><img src="/images/projections/sphere_proj.png" alt="Sphère en 3D" /></p>
 
 <p>Plus proche est ce qu’on appelle un ellipsoïde. Avec cet ellipsoïde, on a bien une sphère aplatie aux pôles.</p>
 
-<p><img src="/tuto-carto/images/projections/ellipsoide_proj.png" alt="Ellipse en 3D" /></p>
+<p><img src="/images/projections/ellipsoide_proj.png" alt="Ellipse en 3D" /></p>
 
 <p>Pour créer un ellipsoïde, on utilise une ellipse qu’on fait tourner autour de son grand axe. Ainsi, pour caractériser un ellipsoïde, on se contente de donner les dimensions de son grand axe et de son petit axe, c’est suffisant pour savoir de quoi on parle. On en donne généralement le demi-grand axe et le demi-petit axe.</p>
 
@@ -162,7 +162,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 <li>Projection azimutale</li>
 </ul>
 
-<p><img src="/tuto-carto/images/projections/diff_volumes.png" alt="Sphère en 3D" /></p>
+<p><img src="/images/projections/diff_volumes.png" alt="Sphère en 3D" /></p>
 
 <p>Selon que le papier photographique est un cylindre, un cône ou un plan. On a choisi ces surfaces parce qu’elles sont dites développables, on peut par exemple étaler un cylindre sur un plan sans déformation de sa surface, en le découpant et en le déroulant. La sphère n’est pas une surface développable, sinon on ne se créerait pas toutes ces difficultés.</p>
 
@@ -180,17 +180,17 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <h2 id="projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518">Projection conique de Lambert</h2>
 
-<p><img src="/tuto-carto/images/projections/lambert.bmp" alt="Sphère en 3D" /></p>
+<p><img src="/images/projections/lambert.bmp" alt="Sphère en 3D" /></p>
 
 <p>Il s’agit d’une projection conique, ainsi les méridiens convergent tous vers un point unique et le pôle sud prend toute la place en bas de la carte. Elle préserve les angles, ainsi elle fut utilisée par l’artillerie française pendant la guerre 14-18: l’angle de tir en réalité est le même que l’angle de tir sur la carte. C’est la projection officielle pour la france:</p>
 
-<p><img src="/tuto-carto/images/projections/France-Lambert.bmp" alt="France Lambert" /></p>
+<p><img src="/images/projections/France-Lambert.bmp" alt="France Lambert" /></p>
 
 <h2 id="projection-de-mercator:bc646ba2fe612c0702e39589e75e6518">Projection de Mercator</h2>
 
 <p>Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.</p>
 
-<p><img src="/tuto-carto/images/projections/Mercator_full.bmp" alt="Mercator" /></p>
+<p><img src="/images/projections/Mercator_full.bmp" alt="Mercator" /></p>
 
 <p>Comme la projection de Lambert, elle conserve les angles et les formes. C’est ainsi la projection utilisée majoritairement pour la navigation, puisque les caps sur la carte sont les mêmes qu’en réalité.</p>
 
@@ -204,11 +204,11 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.</p>
 
-<p><img src="/tuto-carto/images/projections/Gall-Peters.bmp" alt="Gall-Peters" /></p>
+<p><img src="/images/projections/Gall-Peters.bmp" alt="Gall-Peters" /></p>
 
 <p>Ainsi les surfaces représentées sont proches de la réalité et permettent de mieux visualiser les superficies réelles des différentes pays/continents. Ainsi, on peut comparer le groenland et l’afrique, qui sont de superficie très différente, ce que la projection Mercator ne rend pas.</p>
 
-<p><img src="/tuto-carto/images/projections/comparaison.png" alt="comparaison" /></p>
+<p><img src="/images/projections/comparaison.png" alt="comparaison" /></p>
 
 <p>En revanche, Gall-Peters présente de fortes distorsions de formes.</p>
 
@@ -220,7 +220,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>Une autre propriété intéressante est que le chemin le plus court sur une sphère étant un arc de cercle, ce sont des droites sur les cartes gnomoniques. Ce n’est pas le cas sur les autres projections, ainsi les trajectoires des avions paraissent incurvées quand elles sont représentées sur une projection différente alors qu’ils vont en réalité au plus court.</p>
 
-<p><img src="/tuto-carto/images/projections/gnomonique.bmp" alt="Gnomonique" /></p>
+<p><img src="/images/projections/gnomonique.bmp" alt="Gnomonique" /></p>
 
 <h1 id="récapitulatif:bc646ba2fe612c0702e39589e75e6518">Récapitulatif</h1>
 
@@ -288,10 +288,10 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
           
 
           <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f&t=Les%20Projections" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f&text=Les%20Projections&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/share?url=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url=https%3a%2f%2fsyldor.github.io%2ftuto-carto%2fpost%2fprojections%2f&title=Les%20Projections" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2ftuto-carto.fr%2fpost%2fprojections%2f&t=Les%20Projections" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2ftuto-carto.fr%2fpost%2fprojections%2f&text=Les%20Projections&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2ftuto-carto.fr%2fpost%2fprojections%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2ftuto-carto.fr%2fpost%2fprojections%2f&title=Les%20Projections" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
           </div>
 
           
@@ -319,7 +319,7 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
 
   
   <div class="section">
-    <header><div class="title">TableOfContents</div></header>
+    <header><div class="title">Table des Matières</div></header>
     <div class="list-default"><nav id="TableOfContents">
 <ul>
 <li><a href="#méthode:bc646ba2fe612c0702e39589e75e6518">Méthode</a>
@@ -347,8 +347,8 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="https://syldor.github.io/tuto-carto/post/projections/" class="clearfix">
-    <div class="image" style="background-image: url(https://syldor.github.io/tuto-carto/images/World-Lambert.bmp);"></div>
+  <a href="https://tuto-carto.fr/post/projections/" class="clearfix">
+    <div class="image" style="background-image: url(https://tuto-carto.fr/images/World-Lambert.bmp);"></div>
     <div class="detail">
       <h2 class="title">Les Projections</h2>
     </div>

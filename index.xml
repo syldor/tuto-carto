@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tuto Carto </title>
-    <link>https://syldor.github.io/tuto-carto/</link>
+    <title>Tuto Carto: blog autour des cartes </title>
+    <link>https://tuto-carto.fr/</link>
     <language>en-us</language>
     <author>Sylvain Dorey</author>
     <rights>(C) 2017</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Les Projections</title>
-          <link>https://syldor.github.io/tuto-carto/post/projections/</link>
+          <link>https://tuto-carto.fr/post/projections/</link>
           <pubDate>Mon, 03 Apr 2017 16:56:16 ICT</pubDate>
           <author>Sylvain Dorey</author>
-          <guid>https://syldor.github.io/tuto-carto/post/projections/</guid>
+          <guid>https://tuto-carto.fr/post/projections/</guid>
           <description>
 
 &lt;h1 id=&#34;méthode:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Méthode&lt;/h1&gt;
@@ -51,11 +51,11 @@ La forme générale.&lt;/p&gt;
 
 &lt;p&gt;Le premier modèle et le plus simple est de considérer une sphère. On a vu que ce modèle n’était pas le bon puisque la Terre est aplatie au pôle. Pour créer une sphère de rayon R, on prend un cercle de Rayon R qu’on fait tourner autour d’un de ses diamètres.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/sphere_proj.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/sphere_proj.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Plus proche est ce qu’on appelle un ellipsoïde. Avec cet ellipsoïde, on a bien une sphère aplatie aux pôles.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/ellipsoide_proj.png&#34; alt=&#34;Ellipse en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/ellipsoide_proj.png&#34; alt=&#34;Ellipse en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pour créer un ellipsoïde, on utilise une ellipse qu’on fait tourner autour de son grand axe. Ainsi, pour caractériser un ellipsoïde, on se contente de donner les dimensions de son grand axe et de son petit axe, c’est suffisant pour savoir de quoi on parle. On en donne généralement le demi-grand axe et le demi-petit axe.&lt;/p&gt;
 
@@ -108,7 +108,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 &lt;li&gt;Projection azimutale&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/diff_volumes.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/diff_volumes.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selon que le papier photographique est un cylindre, un cône ou un plan. On a choisi ces surfaces parce qu’elles sont dites développables, on peut par exemple étaler un cylindre sur un plan sans déformation de sa surface, en le découpant et en le déroulant. La sphère n’est pas une surface développable, sinon on ne se créerait pas toutes ces difficultés.&lt;/p&gt;
 
@@ -126,17 +126,17 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;h2 id=&#34;projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection conique de Lambert&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/lambert.bmp&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/lambert.bmp&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Il s’agit d’une projection conique, ainsi les méridiens convergent tous vers un point unique et le pôle sud prend toute la place en bas de la carte. Elle préserve les angles, ainsi elle fut utilisée par l’artillerie française pendant la guerre 14-18: l’angle de tir en réalité est le même que l’angle de tir sur la carte. C’est la projection officielle pour la france:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/France-Lambert.bmp&#34; alt=&#34;France Lambert&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/France-Lambert.bmp&#34; alt=&#34;France Lambert&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;projection-de-mercator:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection de Mercator&lt;/h2&gt;
 
 &lt;p&gt;Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/Mercator_full.bmp&#34; alt=&#34;Mercator&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/Mercator_full.bmp&#34; alt=&#34;Mercator&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Comme la projection de Lambert, elle conserve les angles et les formes. C’est ainsi la projection utilisée majoritairement pour la navigation, puisque les caps sur la carte sont les mêmes qu’en réalité.&lt;/p&gt;
 
@@ -150,11 +150,11 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/Gall-Peters.bmp&#34; alt=&#34;Gall-Peters&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/Gall-Peters.bmp&#34; alt=&#34;Gall-Peters&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ainsi les surfaces représentées sont proches de la réalité et permettent de mieux visualiser les superficies réelles des différentes pays/continents. Ainsi, on peut comparer le groenland et l’afrique, qui sont de superficie très différente, ce que la projection Mercator ne rend pas.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/comparaison.png&#34; alt=&#34;comparaison&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/comparaison.png&#34; alt=&#34;comparaison&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;En revanche, Gall-Peters présente de fortes distorsions de formes.&lt;/p&gt;
 
@@ -166,7 +166,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Une autre propriété intéressante est que le chemin le plus court sur une sphère étant un arc de cercle, ce sont des droites sur les cartes gnomoniques. Ce n’est pas le cas sur les autres projections, ainsi les trajectoires des avions paraissent incurvées quand elles sont représentées sur une projection différente alors qu’ils vont en réalité au plus court.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://syldor.github.io/tuto-carto/tuto-carto/images/projections/gnomonique.bmp&#34; alt=&#34;Gnomonique&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/gnomonique.bmp&#34; alt=&#34;Gnomonique&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;récapitulatif:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Récapitulatif&lt;/h1&gt;
 
