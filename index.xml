@@ -6,8 +6,71 @@
     <language>en-us</language>
     <author>Sylvain Dorey</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-03 16:56:16 &#43;0700 ICT</updated>
+    <updated>2017-04-04 14:34:29 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Customiser une carte Google Maps</title>
+          <link>https://tuto-carto.fr/post/google-maps/</link>
+          <pubDate>Tue, 04 Apr 2017 14:34:29 ICT</pubDate>
+          <author>Sylvain Dorey</author>
+          <guid>https://tuto-carto.fr/post/google-maps/</guid>
+          <description>
+
+&lt;h1 id=&#34;google-maps-pour-créer-des-cartes-simples:2e0df0bef7444dda2b530d72f1f2339b&#34;&gt;Google Maps pour créer des cartes simples&lt;/h1&gt;
+
+&lt;p&gt;Google Maps est une application permettant de consulter les cartes du monde à différents zooms, mais elle permet aussi de créer ses propres cartes en utilisant son fond de carte comme base. C&amp;rsquo;est très utile quand on a besoin de positioner rapidement des éléments et de les partager.&lt;/p&gt;
+
+&lt;p&gt;Google a créé de nombreuses applications pour internet. A l’origine il y a le moteur de recherche, ensuite la boîte mail Gmail et Google Drive.
+Google Drive est une suite bureautique au même titre que Microsoft Office. Office comprend par exemple:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Word&lt;/li&gt;
+&lt;li&gt;Excel&lt;/li&gt;
+&lt;li&gt;Power Point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Google Drive comprend des équivalents:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Google Doc&lt;/li&gt;
+&lt;li&gt;Google Sheets&lt;/li&gt;
+&lt;li&gt;Google Slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ces applications sont accessibles à l’adresse www.drive.google.com. Elles sont gratuites et nécessitent seulement un compte Google qui se crée rapidement.&lt;/p&gt;
+
+&lt;p&gt;Google Drive a de nombreuses applications, et l’une d’entre elle s’appelle Google My Maps. On crée une nouvelle carte en cliquant sur New &amp;gt;&amp;gt; More &amp;gt;&amp;gt; Google My Maps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/google-maps/path.png&#34; alt=&#34;Trouver Google MyMaps&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On a alors une interface pour pouvoir incorporer rapidement nos éléments sur un fond Goole Maps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/google-maps/Google_My_Maps.png&#34; alt=&#34;Google MyMaps Interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On a toujours la barre de recherche propre à Google Maps qui nous permet de taper une adresse et d’obtenir sa localisation précise sur la carte. On peut alors y placer un repère.
+Les repères peuvent aussi être placés à main levée avec l’icône correspondant .
+L’autre force de Google est de proposer des trajets entre deux points, il est aussi possible de le faire ici avec .
+D’autres options sont proposées, comme tracer des lignes et changer les couleurs du fond de carte. On peut donc créer des cartes comme celle ci-dessous:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/google-maps/Google_My_Maps_Exemple.png&#34; alt=&#34;Google MyMaps Interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La carte peut ensuite être partagée, stockée comme telle comme une application Google Maps, ou encore être téléchargée sous format pdf ou image.
+On peut accéder et poursuivre l’édition de cartes à travers Google Drive, ou aussi en se connectant à Google Maps puis dans le menu “Vos Adresses”.&lt;/p&gt;
+
+&lt;p&gt;L’application Google My Maps ne permet pas de créer des visualisations cartographiques ou scientifiques. Il s’agit en revanche d’un outil performant et très simple pour localiser rapidement des emplacements et partager des informations.&lt;/p&gt;
+
+&lt;p&gt;C’est la solution idéale pour des petits projets personnels. Si la carte avait besoin d’éléments plus complexes ou aurait vocation à être vue par des milliers de personnes tous les jours, d’autres application peuvent être envisagées, dont certaines fonctionnalités sont payantes. La plupart proposent gratuitement des fonctions similaires à Google My Maps. En voici quelques noms:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.animaps.com/#!home&#34;&gt;AniMaps&lt;/a&gt;: Cette appication permet de créer des cartes animées, dont les éléments se déplacent. L’utilisateur voit alors la carte comme un film.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scribblemaps.com/&#34;&gt;ScribbleMaps&lt;/a&gt;: Permet d’ajouter du texte, des images, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zeemaps.com/&#34;&gt;ZeeMaps&lt;/a&gt;: Permet d’ajouter du son sur chaque repère, d’en choisir les icônes, etc.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
     
       
         <item>
