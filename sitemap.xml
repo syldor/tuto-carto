@@ -2,23 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tuto-carto.fr/</loc>
-    <lastmod>2017-04-04T15:20:35+07:00</lastmod>
+    <loc>/tuto-carto.fr/</loc>
+    <lastmod>2017-04-05T11:09:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://tuto-carto.fr/post/longitude-latitude/</loc>
+    <loc>/tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</loc>
+    <lastmod>2017-04-05T11:09:47+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tuto-carto.fr/post/longitude-latitude/</loc>
     <lastmod>2017-04-04T15:20:35+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tuto-carto.fr/post/google-maps/</loc>
+    <loc>/tuto-carto.fr/post/google-maps/</loc>
     <lastmod>2017-04-04T14:34:29+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tuto-carto.fr/post/projections/</loc>
+    <loc>/tuto-carto.fr/post/projections/</loc>
     <lastmod>2017-04-03T16:56:16+07:00</lastmod>
   </url>
   

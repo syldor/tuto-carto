@@ -1,0 +1,331 @@
+<div class="single">
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16-DEV" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/tuto-carto.fr/css/styles.css">
+    <link rel="stylesheet" href="/tuto-carto.fr/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/tuto-carto.fr//index.xml">
+
+    
+    <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ? - Tuto Carto: blog autour des cartes</title>
+    <meta property='og:title' content="Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ? - Tuto Carto: blog autour des cartes">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="/tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/">
+    
+    <meta property="og:image" content="/tuto-carto.fr/images/bdd1/database.jpg">
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <div class="title"><a href="/tuto-carto.fr/">Tuto Carto: blog autour des cartes</a></div>
+    </header>
+
+    <div class="container site">
+
+
+
+  <div class="row">
+    <div class="col-sm-9">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="/tuto-carto.fr/"/>
+        <meta itemprop="dateModified" content="2017-04-05T11:09:47&#43;07:00">
+        <meta itemprop="headline" content="Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?">
+        <meta itemprop="description" content="Les bases de données Dans son acceptation globale, une base de donnée est uniquement un système de stockage des données. Il peut s’agir d’un gros classeur dans une armoire, ou encore de fichiers sur un disque dur comme présentés dans la section précédente. Cependant en pratique, quand on parle de base de données, il s’agit d’un système informatique très structuré qui permet de stocker et de consulter des données rangées à l’intérieur.">
+        <meta itemprop="url" content="/tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="/tuto-carto.fr/images/bdd1/database.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="/tuto-carto.fr/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Tuto Carto: blog autour des cartes">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Sylvain Dorey">
+        </div>
+
+        <div class="image" style="background-image: url(/tuto-carto.fr/images/bdd1/database.jpg);"></div>
+
+        <header class="article-header">
+          <h1 class="article-title">Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          
+
+<h1 id="les-bases-de-données:8810a78570fa75d0acb0780ac3be473e">Les bases de données</h1>
+
+<p>Dans son acceptation globale, une base de donnée est uniquement un système de stockage des données. Il peut s’agir d’un gros classeur dans une armoire, ou encore de fichiers sur un disque dur comme présentés dans la section précédente. Cependant en pratique, quand on parle de base de données, il s’agit d’un système informatique très structuré qui permet de stocker et de consulter des données rangées à l’intérieur.</p>
+
+<p>En réalité, la base de données stocke les données sur le disque dur de l’ordinateur, et le Système de Gestion de Base de données permet de les afficher, explorer, éditer etc … quand on en a besoin.</p>
+
+<p>De nombreux systèmes de bases de données (qu’on appellera par la suite juse “bases de données”) existent, comme Microsoft SQL Server, mySQL et PostgreSQL. Le schéma suivant explique comment intéragir avec une base de données.</p>
+
+<p><img src="/images/bdd1/schema.png"></p>
+
+<p>Celà ressemble à l&rsquo;utilisation d&rsquo;un simple logiciel pour manipuler les données, comme avec Word. Cependant l’utilisateur n’a pas accès aux fichiers finaux, il ne peut pas les partager en les envoyant par email. Cependant, de multiples utilisateurs peuvent accéder à la base de données depuis différents ordinateurs à travers un réseau (internet) et il est possible d’exporter les données dans un format fichier.</p>
+
+<p>Ainsi la base de données n’est en rien une restriction. C’est au contraire un outil plus puissant que de simples fichiers. Cependant comme souvent un outil plus puissant se révèle plus complexe à utiliser. Il ne faut pas être rebuté par ça, les bases de données sont un sujet très intéressant et leur utilisation, si elle n’est pas d’accès immédiat, est à la portée de toute personne qui s’y intéresse.
+Nous allons voir par la suite plus en détails les bases de données et leurs extensions géographiques.</p>
+
+<h1 id="les-bases-de-données-sql:8810a78570fa75d0acb0780ac3be473e">Les bases de données SQL</h1>
+
+<h2 id="les-requêtes:8810a78570fa75d0acb0780ac3be473e">Les requêtes</h2>
+
+<p>La plupart des noms cités dans la section précédente avaient un point commun, les trois lettres SQL. Microsoft SQL Server, PostgreSQL, mySQL. Cela signifie Structured Query Language. C’est le langage utilisé pour interagir avec une base de données SQL.</p>
+
+<p>A l’intérieur d’une base de données SQL, l’information est rangée dans des tables. Une table est comme un tableur, chaque ligne de la table est une donnée, et chaque colonne est une propriété de la donnée. Il est aisé de se représenter une base de données comme une collection de Feuilles Excel qu’on peut mélanger, filtrer, joindre, éditer etc … à travers des requêtes SQL qui seront tapées dans une fenêtre créée à cet effet: il peut s’agir d’un logiciel, un terminal, etc …</p>
+
+<p>Rem: Il y a deux façons d’utiliser un ordinateur. Soit avec une souris en cliquant sur des icônes, menus, boutons etc, soit en utilisant un terminal dans lequel on tape directement des commandes. Même si la deuxième solution peut paraître plus complexe, il n’en est rien, les commandes sont simples.</p>
+
+<p>Certains logiciels permettent de consulter les données d’une base sans avoir recours aux requêtes SQL, cela peut être pratique pour l’exploration rapide d’une base.</p>
+
+<p>Le langage SQL est simple, il s’agit presque de phrases réelles en anglais. Supposons que l’on ait une table clients dans laquelle on stocke les données précédentes, il y aurait alors les colonnes:</p>
+
+<ul>
+<li>Nom</li>
+<li>Type</li>
+<li>Adresse</li>
+<li>Ville</li>
+<li>Longitude</li>
+<li>Latitude</li>
+</ul>
+
+<p>Pour afficher les données de la table, on pourrait formuler la phrase suivante en français:</p>
+
+<p>Afficher les noms et villes présents dans la table Clients.</p>
+
+<p>La version SQL est la suivante:</p>
+
+<pre><code class="language-SQL">SELECT nom, ville FROM Clients;
+</code></pre>
+
+<p>Une autre requête pourrait être:</p>
+
+<p>Afficher tout de la table Clients où la ville est Paris.
+La requête SQL:</p>
+
+<pre><code class="language-SQL">SELECT * FROM Clients WHERE ville=’Paris’;
+</code></pre>
+
+<p>On remarque que * signifie “toutes les colonnes” et qu’une phrase se finit par un point virgule.
+Le SQL est un langage très simple à maîtriser, même si au début le fait d’écrire soi-même des instructions peut dérouter. Le tableau suivant présente quelques requêtes types avec leur traduction en français.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>SQL</th>
+            <th>Français</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Update Clients SET type = ‘appartement’ WHERE name=’Mélanie’;</td>
+            <td>Modifier la table Clients: définir la valeur type = ‘appartment’ pour la ligne dont le nom est ‘Mélanie’;</td>
+        </tr>
+
+        <tr>
+            <td>Insert into Clients (name, type, adresse, ville, longitude, latitude) Values (‘Tom’, ‘bureau’, ‘3 rue Vaugirard’, ‘Paris’, 48.84, 2.42);
+            </td>
+            <td>Insérer dans la table Clients la ligne (‘Tom’, ‘bureau’, ‘3 rue Vaugirard’, ‘Paris’, 48.84, 2.42).</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Le SQL n’est pas limité dans ses possibilités, il est possible de modifier plusieurs lignes au même moment, ajouter des lignes avec des valeurs nulles, créer des nouvelles tables, etc. Il suffit pour cela de regarder la documentation, des tutoriels, ou simplement de taper ce qu’o souhaite faire dans google pour apprendre les mots clés à utiliser.</p>
+
+<h2 id="les-types-de-données:8810a78570fa75d0acb0780ac3be473e">Les types de données</h2>
+
+<p>Les bases de données SQL sont très structurées. Essayer de rentrer un nombre à la place de la ville engendrerait une erreur. A la création d’une table, il est nécessaire de spécifier quel valeur est attendue dans chaque colonne. On appelle ça le type d’une colonne. Ils sont prédéfinis et on ne peut utiliser que ceux proposés par la base de données. Ils couvrent cependant la plupart des cas imaginables. Voilà la liste des types utilisés dans notre listing:</p>
+
+<ul>
+<li>Nom: Character Varying</li>
+<li>Type: Character Varying</li>
+<li>Adresse:  Character Varying</li>
+<li>Ville:  Character Varying</li>
+<li>Longitude: Float</li>
+<li>Latitude: Float</li>
+</ul>
+
+<p>On n’utilise que deux types parmi la large panoplie proposée. Character Varying représente une chaîne de caractères dont la longueur peut varier. On ne sait pas à l’avance combien de lettres comprendront le nom ou la ville de notre client. Float est la façon de nommer les nombres à virgule, comme la longitude et la latitude.
+D’autres types sont disponibles: Integer permet de stocker des nombres dans virgules, date permet de stocker un horaire.</p>
+
+<h2 id="les-fonctions:8810a78570fa75d0acb0780ac3be473e">Les fonctions</h2>
+
+<p>Nous avons vus deux notions importantes du SQL: les requêtes et les types. Un dernier atout du SQL est d’avoir des fonctions permettant d’agir sur les données. Ces fonctions sont propres à chacune des bases de données et peuvent varier dans le nom mais la plupart sont communes.</p>
+
+<p>Un exemple d’utilisation de fonction est de vouloir transformer toutes les chaînes de caractères qui peuvent avoir des majuscules en minuscules. La fonction à appeler s’appelle lower. Ainsi, on a la requête suivante en français:</p>
+
+<blockquote>
+<p>Modifier la table Clients, changer la valeur de nom en nom en minuscule pour toutes les lignes.</p>
+</blockquote>
+
+<p>Ce qui donne en SQL:</p>
+
+<pre><code class="language-SQL">Update Clients, Set name = lower(name);
+</code></pre>
+
+<p>De nombreuses autres fonctions sont disponibles, comme la valeur absolue, la racine carrée, et bien d’autres. Il est même possible de créer ses propres fonctions en combinant celles déjà fournies.</p>
+
+        </div>
+
+
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=%2ftuto-carto.fr%2fpost%2fbases-de-donnees-geo-1-bases-de-donnees%2f&t=Les%20bases%20de%20donn%c3%a9es%20g%c3%a9ographiques%20%281%29%3a%20qu%27est-ce%20qu%27une%20base%20de%20donn%c3%a9es%20%3f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=%2ftuto-carto.fr%2fpost%2fbases-de-donnees-geo-1-bases-de-donnees%2f&text=Les%20bases%20de%20donn%c3%a9es%20g%c3%a9ographiques%20%281%29%3a%20qu%27est-ce%20qu%27une%20base%20de%20donn%c3%a9es%20%3f&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=%2ftuto-carto.fr%2fpost%2fbases-de-donnees-geo-1-bases-de-donnees%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=%2ftuto-carto.fr%2fpost%2fbases-de-donnees-geo-1-bases-de-donnees%2f&title=Les%20bases%20de%20donn%c3%a9es%20g%c3%a9ographiques%20%281%29%3a%20qu%27est-ce%20qu%27une%20base%20de%20donn%c3%a9es%20%3f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'tuto-carto';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          
+        </aside>
+
+      </article>
+    </div>
+
+    <div class="col-sm-3">
+      <aside class="site">
+
+  
+  <div class="section">
+    <header><div class="title">Table des Matières</div></header>
+    <div class="list-default"><nav id="TableOfContents">
+<ul>
+<li><a href="#les-bases-de-données:8810a78570fa75d0acb0780ac3be473e">Les bases de données</a></li>
+<li><a href="#les-bases-de-données-sql:8810a78570fa75d0acb0780ac3be473e">Les bases de données SQL</a>
+<ul>
+<li><a href="#les-requêtes:8810a78570fa75d0acb0780ac3be473e">Les requêtes</a></li>
+<li><a href="#les-types-de-données:8810a78570fa75d0acb0780ac3be473e">Les types de données</a></li>
+<li><a href="#les-fonctions:8810a78570fa75d0acb0780ac3be473e">Les fonctions</a></li>
+</ul></li>
+</ul>
+</nav></div>
+  </div>
+  
+
+  
+
+  <div class="section">
+    <header><div class="title">Articles Récents</div></header>
+    <div class="content">
+      
+      <div class="sm"><article class="li">
+  <a href="/tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/" class="clearfix">
+    <div class="image" style="background-image: url(/tuto-carto.fr/images/bdd1/database.jpg);"></div>
+    <div class="detail">
+      <h2 class="title">Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</h2>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="/tuto-carto.fr/post/longitude-latitude/" class="clearfix">
+    <div class="image" style="background-image: url(/tuto-carto.fr/images/longlat/latitude.png);"></div>
+    <div class="detail">
+      <h2 class="title">Longitude et Latitude</h2>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="/tuto-carto.fr/post/google-maps/" class="clearfix">
+    <div class="image" style="background-image: url(/tuto-carto.fr/images/google-maps/Google_My_Maps_Exemple.jpg);"></div>
+    <div class="detail">
+      <h2 class="title">Customiser une carte Google Maps</h2>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="/tuto-carto.fr/post/projections/" class="clearfix">
+    <div class="image" style="background-image: url(/tuto-carto.fr/images/projections/lambert.bmp);"></div>
+    <div class="detail">
+      <h2 class="title">Les Projections</h2>
+    </div>
+  </a>
+</article>
+</div>
+      
+    </div>
+  </div>
+
+  
+
+</aside>
+
+    </div>
+
+  </div>
+
+      </div>
+
+    <footer id="email" class="email site">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Si ce contenu vous plaît, il va bientôt exister en ebook. Entrez-votre email pour être au courant de son avancement !</strong>
+                    </h4>
+                </div>
+                <form class="col-lg-12" id="cartoform">
+                    <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+                        <input class="form-control input-lg" placeholder="Email" type="text" name="email" id="mce-EMAIL">
+                        <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit">OK</button></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2017 Sylvain Dorey</p>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/google-sheet.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+
+</div>

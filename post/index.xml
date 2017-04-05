@@ -2,20 +2,147 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tuto Carto: blog autour des cartes </title>
-    <link>https://tuto-carto.fr/post/</link>
+    <link>tuto-carto.fr/post/</link>
     <language>en-us</language>
     <author>Sylvain Dorey</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-04 15:20:35 &#43;0700 ICT</updated>
+    <updated>2017-04-05 11:09:47 &#43;0700 ICT</updated>
 
     
       
         <item>
+          <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
+          <link>/tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
+          <pubDate>Wed, 05 Apr 2017 11:09:47 ICT</pubDate>
+          <author>Sylvain Dorey</author>
+          <guid>/tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
+          <description>
+
+&lt;h1 id=&#34;les-bases-de-données:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les bases de données&lt;/h1&gt;
+
+&lt;p&gt;Dans son acceptation globale, une base de donnée est uniquement un système de stockage des données. Il peut s’agir d’un gros classeur dans une armoire, ou encore de fichiers sur un disque dur comme présentés dans la section précédente. Cependant en pratique, quand on parle de base de données, il s’agit d’un système informatique très structuré qui permet de stocker et de consulter des données rangées à l’intérieur.&lt;/p&gt;
+
+&lt;p&gt;En réalité, la base de données stocke les données sur le disque dur de l’ordinateur, et le Système de Gestion de Base de données permet de les afficher, explorer, éditer etc … quand on en a besoin.&lt;/p&gt;
+
+&lt;p&gt;De nombreux systèmes de bases de données (qu’on appellera par la suite juse “bases de données”) existent, comme Microsoft SQL Server, mySQL et PostgreSQL. Le schéma suivant explique comment intéragir avec une base de données.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/bdd1/schema.png&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Celà ressemble à l&amp;rsquo;utilisation d&amp;rsquo;un simple logiciel pour manipuler les données, comme avec Word. Cependant l’utilisateur n’a pas accès aux fichiers finaux, il ne peut pas les partager en les envoyant par email. Cependant, de multiples utilisateurs peuvent accéder à la base de données depuis différents ordinateurs à travers un réseau (internet) et il est possible d’exporter les données dans un format fichier.&lt;/p&gt;
+
+&lt;p&gt;Ainsi la base de données n’est en rien une restriction. C’est au contraire un outil plus puissant que de simples fichiers. Cependant comme souvent un outil plus puissant se révèle plus complexe à utiliser. Il ne faut pas être rebuté par ça, les bases de données sont un sujet très intéressant et leur utilisation, si elle n’est pas d’accès immédiat, est à la portée de toute personne qui s’y intéresse.
+Nous allons voir par la suite plus en détails les bases de données et leurs extensions géographiques.&lt;/p&gt;
+
+&lt;h1 id=&#34;les-bases-de-données-sql:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les bases de données SQL&lt;/h1&gt;
+
+&lt;h2 id=&#34;les-requêtes:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les requêtes&lt;/h2&gt;
+
+&lt;p&gt;La plupart des noms cités dans la section précédente avaient un point commun, les trois lettres SQL. Microsoft SQL Server, PostgreSQL, mySQL. Cela signifie Structured Query Language. C’est le langage utilisé pour interagir avec une base de données SQL.&lt;/p&gt;
+
+&lt;p&gt;A l’intérieur d’une base de données SQL, l’information est rangée dans des tables. Une table est comme un tableur, chaque ligne de la table est une donnée, et chaque colonne est une propriété de la donnée. Il est aisé de se représenter une base de données comme une collection de Feuilles Excel qu’on peut mélanger, filtrer, joindre, éditer etc … à travers des requêtes SQL qui seront tapées dans une fenêtre créée à cet effet: il peut s’agir d’un logiciel, un terminal, etc …&lt;/p&gt;
+
+&lt;p&gt;Rem: Il y a deux façons d’utiliser un ordinateur. Soit avec une souris en cliquant sur des icônes, menus, boutons etc, soit en utilisant un terminal dans lequel on tape directement des commandes. Même si la deuxième solution peut paraître plus complexe, il n’en est rien, les commandes sont simples.&lt;/p&gt;
+
+&lt;p&gt;Certains logiciels permettent de consulter les données d’une base sans avoir recours aux requêtes SQL, cela peut être pratique pour l’exploration rapide d’une base.&lt;/p&gt;
+
+&lt;p&gt;Le langage SQL est simple, il s’agit presque de phrases réelles en anglais. Supposons que l’on ait une table clients dans laquelle on stocke les données précédentes, il y aurait alors les colonnes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nom&lt;/li&gt;
+&lt;li&gt;Type&lt;/li&gt;
+&lt;li&gt;Adresse&lt;/li&gt;
+&lt;li&gt;Ville&lt;/li&gt;
+&lt;li&gt;Longitude&lt;/li&gt;
+&lt;li&gt;Latitude&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour afficher les données de la table, on pourrait formuler la phrase suivante en français:&lt;/p&gt;
+
+&lt;p&gt;Afficher les noms et villes présents dans la table Clients.&lt;/p&gt;
+
+&lt;p&gt;La version SQL est la suivante:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;SELECT nom, ville FROM Clients;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Une autre requête pourrait être:&lt;/p&gt;
+
+&lt;p&gt;Afficher tout de la table Clients où la ville est Paris.
+La requête SQL:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;SELECT * FROM Clients WHERE ville=’Paris’;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;On remarque que * signifie “toutes les colonnes” et qu’une phrase se finit par un point virgule.
+Le SQL est un langage très simple à maîtriser, même si au début le fait d’écrire soi-même des instructions peut dérouter. Le tableau suivant présente quelques requêtes types avec leur traduction en français.&lt;/p&gt;
+
+&lt;table class=&#34;table&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;SQL&lt;/th&gt;
+            &lt;th&gt;Français&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Update Clients SET type = ‘appartement’ WHERE name=’Mélanie’;&lt;/td&gt;
+            &lt;td&gt;Modifier la table Clients: définir la valeur type = ‘appartment’ pour la ligne dont le nom est ‘Mélanie’;&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Insert into Clients (name, type, adresse, ville, longitude, latitude) Values (‘Tom’, ‘bureau’, ‘3 rue Vaugirard’, ‘Paris’, 48.84, 2.42);
+            &lt;/td&gt;
+            &lt;td&gt;Insérer dans la table Clients la ligne (‘Tom’, ‘bureau’, ‘3 rue Vaugirard’, ‘Paris’, 48.84, 2.42).&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Le SQL n’est pas limité dans ses possibilités, il est possible de modifier plusieurs lignes au même moment, ajouter des lignes avec des valeurs nulles, créer des nouvelles tables, etc. Il suffit pour cela de regarder la documentation, des tutoriels, ou simplement de taper ce qu’o souhaite faire dans google pour apprendre les mots clés à utiliser.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-types-de-données:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les types de données&lt;/h2&gt;
+
+&lt;p&gt;Les bases de données SQL sont très structurées. Essayer de rentrer un nombre à la place de la ville engendrerait une erreur. A la création d’une table, il est nécessaire de spécifier quel valeur est attendue dans chaque colonne. On appelle ça le type d’une colonne. Ils sont prédéfinis et on ne peut utiliser que ceux proposés par la base de données. Ils couvrent cependant la plupart des cas imaginables. Voilà la liste des types utilisés dans notre listing:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nom: Character Varying&lt;/li&gt;
+&lt;li&gt;Type: Character Varying&lt;/li&gt;
+&lt;li&gt;Adresse:  Character Varying&lt;/li&gt;
+&lt;li&gt;Ville:  Character Varying&lt;/li&gt;
+&lt;li&gt;Longitude: Float&lt;/li&gt;
+&lt;li&gt;Latitude: Float&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On n’utilise que deux types parmi la large panoplie proposée. Character Varying représente une chaîne de caractères dont la longueur peut varier. On ne sait pas à l’avance combien de lettres comprendront le nom ou la ville de notre client. Float est la façon de nommer les nombres à virgule, comme la longitude et la latitude.
+D’autres types sont disponibles: Integer permet de stocker des nombres dans virgules, date permet de stocker un horaire.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-fonctions:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les fonctions&lt;/h2&gt;
+
+&lt;p&gt;Nous avons vus deux notions importantes du SQL: les requêtes et les types. Un dernier atout du SQL est d’avoir des fonctions permettant d’agir sur les données. Ces fonctions sont propres à chacune des bases de données et peuvent varier dans le nom mais la plupart sont communes.&lt;/p&gt;
+
+&lt;p&gt;Un exemple d’utilisation de fonction est de vouloir transformer toutes les chaînes de caractères qui peuvent avoir des majuscules en minuscules. La fonction à appeler s’appelle lower. Ainsi, on a la requête suivante en français:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Modifier la table Clients, changer la valeur de nom en nom en minuscule pour toutes les lignes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ce qui donne en SQL:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;Update Clients, Set name = lower(name);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;De nombreuses autres fonctions sont disponibles, comme la valeur absolue, la racine carrée, et bien d’autres. Il est même possible de créer ses propres fonctions en combinant celles déjà fournies.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Longitude et Latitude</title>
-          <link>https://tuto-carto.fr/post/longitude-latitude/</link>
+          <link>/tuto-carto.fr/post/longitude-latitude/</link>
           <pubDate>Tue, 04 Apr 2017 15:20:35 ICT</pubDate>
           <author>Sylvain Dorey</author>
-          <guid>https://tuto-carto.fr/post/longitude-latitude/</guid>
+          <guid>/tuto-carto.fr/post/longitude-latitude/</guid>
           <description>
 
 &lt;h1 id=&#34;les-coordonnées-sur-le-globe:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;Les coordonnées sur le globe&lt;/h1&gt;
@@ -31,7 +158,7 @@ Ce sont des angles, formés avec des lignes caractéristiques de la Terre comme 
 Cet angle varie entre 0 et 90° (angle droit) et on précise s’il s’agit de l’hémisphère Nord ou Sud. Ainsi la latitude de la tour Eiffel est 48°85 Nord.
 Les cercles de même latitude sont appelées parallèles et sont des cercles allant d’Est en Ouest.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/longlat/latitude.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/longlat/latitude.png&#34;&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;la-longitude:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;La longitude&lt;/h2&gt;
 
@@ -39,7 +166,7 @@ Les cercles de même latitude sont appelées parallèles et sont des cercles all
 La longitude de la Tour Eiffel est 2.29° Est.
 Les zones de même longitude sont appelées méridiens et sont des demi-cercles.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/longlat/longitude.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/longlat/longitude.png&#34;&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;degrés-et-sous-degrés:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;Degrés et sous-degrés&lt;/h2&gt;
 
@@ -68,10 +195,10 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
       
         <item>
           <title>Customiser une carte Google Maps</title>
-          <link>https://tuto-carto.fr/post/google-maps/</link>
+          <link>/tuto-carto.fr/post/google-maps/</link>
           <pubDate>Tue, 04 Apr 2017 14:34:29 ICT</pubDate>
           <author>Sylvain Dorey</author>
-          <guid>https://tuto-carto.fr/post/google-maps/</guid>
+          <guid>/tuto-carto.fr/post/google-maps/</guid>
           <description>
 
 &lt;h1 id=&#34;google-maps-pour-créer-des-cartes-simples:2e0df0bef7444dda2b530d72f1f2339b&#34;&gt;Google Maps pour créer des cartes simples&lt;/h1&gt;
@@ -99,18 +226,18 @@ Google Drive est une suite bureautique au même titre que Microsoft Office. Offi
 
 &lt;p&gt;Google Drive a de nombreuses applications, et l’une d’entre elle s’appelle Google My Maps. On crée une nouvelle carte en cliquant sur New &amp;gt;&amp;gt; More &amp;gt;&amp;gt; Google My Maps.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/google-maps/path.png&#34; alt=&#34;Trouver Google MyMaps&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/google-maps/path.png&#34; alt=&#34;Trouver Google MyMaps&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On a alors une interface pour pouvoir incorporer rapidement nos éléments sur un fond Goole Maps.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/google-maps/Google_My_Maps.jpg&#34; alt=&#34;Google MyMaps Interface&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/google-maps/Google_My_Maps.jpg&#34; alt=&#34;Google MyMaps Interface&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On a toujours la barre de recherche propre à Google Maps qui nous permet de taper une adresse et d’obtenir sa localisation précise sur la carte. On peut alors y placer un repère.
 Les repères peuvent aussi être placés à main levée avec l’icône correspondant .
 L’autre force de Google est de proposer des trajets entre deux points, il est aussi possible de le faire ici avec .
 D’autres options sont proposées, comme tracer des lignes et changer les couleurs du fond de carte. On peut donc créer des cartes comme celle ci-dessous:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/google-maps/Google_My_Maps_Exemple.jpg&#34; alt=&#34;Google MyMaps Interface&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/google-maps/Google_My_Maps_Exemple.jpg&#34; alt=&#34;Google MyMaps Interface&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;La carte peut ensuite être partagée, stockée comme telle comme une application Google Maps, ou encore être téléchargée sous format pdf ou image.
 On peut accéder et poursuivre l’édition de cartes à travers Google Drive, ou aussi en se connectant à Google Maps puis dans le menu “Vos Adresses”.&lt;/p&gt;
@@ -131,10 +258,10 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
       
         <item>
           <title>Les Projections</title>
-          <link>https://tuto-carto.fr/post/projections/</link>
+          <link>/tuto-carto.fr/post/projections/</link>
           <pubDate>Mon, 03 Apr 2017 16:56:16 ICT</pubDate>
           <author>Sylvain Dorey</author>
-          <guid>https://tuto-carto.fr/post/projections/</guid>
+          <guid>/tuto-carto.fr/post/projections/</guid>
           <description>
 
 &lt;h1 id=&#34;méthode:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Méthode&lt;/h1&gt;
@@ -170,11 +297,11 @@ La forme générale.&lt;/p&gt;
 
 &lt;p&gt;Le premier modèle et le plus simple est de considérer une sphère. On a vu que ce modèle n’était pas le bon puisque la Terre est aplatie au pôle. Pour créer une sphère de rayon R, on prend un cercle de Rayon R qu’on fait tourner autour d’un de ses diamètres.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/sphere_proj.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/sphere_proj.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Plus proche est ce qu’on appelle un ellipsoïde. Avec cet ellipsoïde, on a bien une sphère aplatie aux pôles.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/ellipsoide_proj.png&#34; alt=&#34;Ellipse en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/ellipsoide_proj.png&#34; alt=&#34;Ellipse en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Pour créer un ellipsoïde, on utilise une ellipse qu’on fait tourner autour de son grand axe. Ainsi, pour caractériser un ellipsoïde, on se contente de donner les dimensions de son grand axe et de son petit axe, c’est suffisant pour savoir de quoi on parle. On en donne généralement le demi-grand axe et le demi-petit axe.&lt;/p&gt;
 
@@ -227,7 +354,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 &lt;li&gt;Projection azimutale&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/diff_volumes.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/diff_volumes.png&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Selon que le papier photographique est un cylindre, un cône ou un plan. On a choisi ces surfaces parce qu’elles sont dites développables, on peut par exemple étaler un cylindre sur un plan sans déformation de sa surface, en le découpant et en le déroulant. La sphère n’est pas une surface développable, sinon on ne se créerait pas toutes ces difficultés.&lt;/p&gt;
 
@@ -245,17 +372,17 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;h2 id=&#34;projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection conique de Lambert&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/lambert.bmp&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/lambert.bmp&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Il s’agit d’une projection conique, ainsi les méridiens convergent tous vers un point unique et le pôle sud prend toute la place en bas de la carte. Elle préserve les angles, ainsi elle fut utilisée par l’artillerie française pendant la guerre 14-18: l’angle de tir en réalité est le même que l’angle de tir sur la carte. C’est la projection officielle pour la france:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/France-Lambert.bmp&#34; alt=&#34;France Lambert&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/France-Lambert.bmp&#34; alt=&#34;France Lambert&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;projection-de-mercator:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection de Mercator&lt;/h2&gt;
 
 &lt;p&gt;Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/Mercator_full.bmp&#34; alt=&#34;Mercator&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/Mercator_full.bmp&#34; alt=&#34;Mercator&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Comme la projection de Lambert, elle conserve les angles et les formes. C’est ainsi la projection utilisée majoritairement pour la navigation, puisque les caps sur la carte sont les mêmes qu’en réalité.&lt;/p&gt;
 
@@ -269,11 +396,11 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/Gall-Peters.bmp&#34; alt=&#34;Gall-Peters&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/Gall-Peters.bmp&#34; alt=&#34;Gall-Peters&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ainsi les surfaces représentées sont proches de la réalité et permettent de mieux visualiser les superficies réelles des différentes pays/continents. Ainsi, on peut comparer le groenland et l’afrique, qui sont de superficie très différente, ce que la projection Mercator ne rend pas.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/comparaison.png&#34; alt=&#34;comparaison&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/comparaison.png&#34; alt=&#34;comparaison&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;En revanche, Gall-Peters présente de fortes distorsions de formes.&lt;/p&gt;
 
@@ -285,7 +412,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Une autre propriété intéressante est que le chemin le plus court sur une sphère étant un arc de cercle, ce sont des droites sur les cartes gnomoniques. Ce n’est pas le cas sur les autres projections, ainsi les trajectoires des avions paraissent incurvées quand elles sont représentées sur une projection différente alors qu’ils vont en réalité au plus court.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tuto-carto.fr/images/projections/gnomonique.bmp&#34; alt=&#34;Gnomonique&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tuto-carto.fr/images/projections/gnomonique.bmp&#34; alt=&#34;Gnomonique&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;récapitulatif:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Récapitulatif&lt;/h1&gt;
 
