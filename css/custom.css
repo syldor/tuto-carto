@@ -20,4 +20,10 @@ blockquote {
 	text-align: center;
 }
 
+.remark {
+	text-align: left;
+}
 
+h2 {
+	word-break: keep-all !important;
+}

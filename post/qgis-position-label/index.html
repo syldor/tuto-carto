@@ -15,14 +15,14 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.tuto-carto.fr//index.xml">
 
     
-    <title>Longitude et Latitude - Tuto Carto: blog autour des cartes</title>
-    <meta property='og:title' content="Longitude et Latitude - Tuto Carto: blog autour des cartes">
+    <title>Chosir la position des labels dans QGIS - Tuto Carto: blog autour des cartes</title>
+    <meta property='og:title' content="Chosir la position des labels dans QGIS - Tuto Carto: blog autour des cartes">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://www.tuto-carto.fr/post/longitude-latitude/">
+    <meta property="og:url" content="https://www.tuto-carto.fr/post/qgis-position-label/">
     
-    <meta property="og:image" content="https://www.tuto-carto.fr/images/longlat/latitude.png">
+    <meta property="og:image" content="https://www.tuto-carto.fr/images//qgis-labels/4.png">
 
   </head>
 
@@ -42,12 +42,12 @@
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://www.tuto-carto.fr/"/>
-        <meta itemprop="dateModified" content="2017-04-04T15:20:35&#43;07:00">
-        <meta itemprop="headline" content="Longitude et Latitude">
-        <meta itemprop="description" content="Les coordonnées sur le globe La longitude et latitude permettent de donner une adresse à tous les lieux de la Terre. Il s’agit donc de repérer un endroit sur la sphère terrestre. Un point se repère par la distance à l’équateur (latitude) et la distance au Méridien de Greenwitch (longitude). Ces données sont en degrés (°): un degré mesure l’écartement d’un angle, comme par exemple l’angle droit est de 90° dans un triangle rectangle.">
-        <meta itemprop="url" content="https://www.tuto-carto.fr/post/longitude-latitude/">
+        <meta itemprop="dateModified" content="2017-04-06T10:33:01&#43;07:00">
+        <meta itemprop="headline" content="Chosir la position des labels dans QGIS">
+        <meta itemprop="description" content="Définir la position des labels QGIS Cet article a été testé pour QGIS Wien 2.8 QGIS positionne automatiquement ces labels, et offre différentes options pour modifier sa méthode: on peut par exemple forcer un décalage automatique du texte depuis le point d&rsquo;ancrage. Cependant cette modification ne peut pas se faire label par label. La méthode suivante permet de positionner le texte des labels. 1- Ajouter des colonnes à la table des attributs.">
+        <meta itemprop="url" content="https://www.tuto-carto.fr/post/qgis-position-label/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="https://www.tuto-carto.fr/images/longlat/latitude.png" />
+          <meta itemprop="url" content="https://www.tuto-carto.fr/images//qgis-labels/4.png" />
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="800">
         </div>
@@ -63,58 +63,70 @@
           <meta itemprop="name" content="Sylvain Dorey">
         </div>
 
-        <div class="image" style="background-image: url(https://www.tuto-carto.fr/images/longlat/latitude.png);"></div>
+        <div class="image" style="background-image: url(https://www.tuto-carto.fr/images//qgis-labels/4.png);"></div>
 
         <header class="article-header">
-          <h1 class="article-title">Longitude et Latitude</h1>
+          <h1 class="article-title">Chosir la position des labels dans QGIS</h1>
         </header>
 
         <div class="article-body" itemprop="articleBody">
           
 
-<h1 id="les-coordonnées-sur-le-globe:59e9885e5dad1c29d4d740efad564f0f">Les coordonnées sur le globe</h1>
-
-<p>La longitude et latitude permettent de donner une adresse à tous les lieux de la Terre. Il s’agit donc de repérer un endroit sur la sphère terrestre. Un point se repère par la distance à l’équateur (latitude) et la distance au Méridien de Greenwitch (longitude). Ces données sont en degrés (°): un degré mesure l’écartement d’un angle, comme par exemple l’angle droit est de 90° dans un triangle rectangle.</p>
-
-<p>Note: L’expression française “sous d’autres latitudes” fait bien référence à des endroits plus chauds, plus proches de l’équateur, que là où nous nous trouvons. Ainsi il est facile de se souvenir que la latitude désigne la distance à l’équateur.
-Ce sont des angles, formés avec des lignes caractéristiques de la Terre comme l’équateur.</p>
-
-<h2 id="la-latitude:59e9885e5dad1c29d4d740efad564f0f">La latitude</h2>
-
-<p>La latitude d’un point représente l’angle entre le plan de l’équateur et une droite passant par le centre de la Terre et l’endroit du point à repérer.
-Cet angle varie entre 0 et 90° (angle droit) et on précise s’il s’agit de l’hémisphère Nord ou Sud. Ainsi la latitude de la tour Eiffel est 48°85 Nord.
-Les cercles de même latitude sont appelées parallèles et sont des cercles allant d’Est en Ouest.</p>
-
-<p><img src="/images/longlat/latitude.png"></p>
-
-<h2 id="la-longitude:59e9885e5dad1c29d4d740efad564f0f">La longitude</h2>
-
-<p>La longitude d’un point représente sa position Est-Ouest. Il s’agit de l’angle formé avec les méridien de référence, Greenwitch. Il s’agit d’un angle entre 0 et 180°, avec l’indication Est ou Ouest selon qu’on se trouve à droite ou à gauche du méridien de référence.
-La longitude de la Tour Eiffel est 2.29° Est.
-Les zones de même longitude sont appelées méridiens et sont des demi-cercles.</p>
-
-<p><img src="/images/longlat/longitude.png"></p>
-
-<h2 id="degrés-et-sous-degrés:59e9885e5dad1c29d4d740efad564f0f">Degrés et sous-degrés</h2>
-
-<p>Il y a deux façons d’écrire les degrés, plus particulièrement les sous-degrés, c’est à dire ce qui vient après la virgule.
-1° représente <sup>1</sup>&frasl;<sub>360</sub> d’un tour complet.
-Mais plutôt que de diviser 1° en 10 (système décimal), on fait comme pour les heures, on les divise en 60, et on appelle les unités des minutes d’arc (plutôt que des minutes, qui sont des unités de temps), de symbole ‘. Cette bizarrerie vient de Babyloniens qui comptaient en base 60 et non comme nous en base 10.
-Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d’arc (symbole ‘‘).</p>
-
-<p>Ainsi, on note ainsi les coordonnées de la Tour Eiffel:</p>
+<h1 id="définir-la-position-des-labels-qgis:6619935c858d08d5e3e4515c2dca42d4">Définir la position des labels QGIS</h1>
 
 <blockquote>
-<p>48° 51&rsquo; 29’’ N, ‎2° 17&rsquo; 40’’ E</p>
+<p>Cet article a été testé pour QGIS Wien 2.8</p>
 </blockquote>
 
-<p>On peut cependant transformer les sous-degrés en sous-degrés décimaux pour que les choses soient plus simples. Comme 1h30 = 1.5h, on écrit:</p>
+<p>QGIS positionne automatiquement ces labels, et offre différentes options pour modifier sa méthode: on peut par exemple forcer un décalage automatique du texte depuis le point d&rsquo;ancrage. Cependant cette modification ne peut pas se faire label par label. La méthode suivante permet de positionner le texte des labels.</p>
 
+<p><img src="/images/qgis-labels/1.png"></p>
+
+<h2 id="1-ajouter-des-colonnes-à-la-table-des-attributs:6619935c858d08d5e3e4515c2dca42d4">1- Ajouter des colonnes à la table des attributs.</h2>
+
+<p>Clique droit sur la couche à modifier, puis &ldquo;Open Attributes Table&rdquo;. Pour ajouter une colonne, passer en mode édition et cliquer sur l&rsquo;icône ajouter.
 <blockquote>
-<p>48.8584° N, 2.2945° E</p>
-</blockquote>
+    <p class="remark">S&rsquo;il est impossible de passer en mode édition, celà vient surement du fait que la couche est en geojson ou csv, il suffit de la convertir en shapefile: clique droit sur la couche, save As, sélectionner Shapefile. Copier coller le style si besoin puis supprimer la couche initiale.</p>
+</blockquote></p>
 
-<p>Ces deux notations sont équivalentes mais ne doivent pas être confondues. Dans un cas il y a ° à la fin des premiers chiffres, dans l’autre ° est à la fin de tout le nombre, collé à la lettre.</p>
+<p><img src="/images/qgis-labels/2.png"></p>
+
+<p>Trois colonnes à ajouter:</p>
+
+<ul>
+<li>x: contient l&rsquo;asbcisse du label
+
+<ul>
+<li>name: x</li>
+<li>type: Decimal number (real)</li>
+<li>Width: Nombre de chiffres: 20 est bien suffisant</li>
+<li>Precision: Nombre de chiffres après la virgule: 10 est bien suffisant</li>
+</ul></li>
+<li>y: contient l&rsquo;ordonnée du label
+
+<ul>
+<li>name: x</li>
+<li>type: Decimal number (real)</li>
+<li>Width: 20</li>
+<li>Precision: 10</li>
+</ul></li>
+</ul>
+
+<p>Enregistrer les changements.</p>
+
+<h2 id="2-faire-correspondre-les-nouvelles-colonnes-x-et-y-aux-coordonnées-des-labels:6619935c858d08d5e3e4515c2dca42d4">2- Faire correspondre les nouvelles colonnes x et y aux coordonnées des labels</h2>
+
+<p>Aller dans le menu des labels &gt;&gt; placement, et faire correspondre la coordonnée X du label à la colonne x de la couche, et Y à y.</p>
+
+<p><img src="/images/qgis-labels/3.png"></p>
+
+<p>Sélectionner x dans le menu déroulant qui apparaît, option &ldquo;Attribu Field &gt;&gt; Field Type&rdquo;</p>
+
+<h2 id="3-positionner-les-labels:6619935c858d08d5e3e4515c2dca42d4">3- Positionner les labels</h2>
+
+<p>Une fois les deux étapes faites, passer la couche en mode édition, le bouton pour bouger les labels est actif, cliquer dessus et positionner les labels à leur place.</p>
+
+<p><img src="/images/qgis-labels/4.png"></p>
 
         </div>
 
@@ -123,10 +135,10 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
           
 
           <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2flongitude-latitude%2f&t=Longitude%20et%20Latitude" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2flongitude-latitude%2f&text=Longitude%20et%20Latitude&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/share?url=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2flongitude-latitude%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2flongitude-latitude%2f&title=Longitude%20et%20Latitude" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2fqgis-position-label%2f&t=Chosir%20la%20position%20des%20labels%20dans%20QGIS" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2fqgis-position-label%2f&text=Chosir%20la%20position%20des%20labels%20dans%20QGIS&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2fqgis-position-label%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fwww.tuto-carto.fr%2fpost%2fqgis-position-label%2f&title=Chosir%20la%20position%20des%20labels%20dans%20QGIS" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
           </div>
 
           
@@ -157,11 +169,11 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
     <header><div class="title">Table des Matières</div></header>
     <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li><a href="#les-coordonnées-sur-le-globe:59e9885e5dad1c29d4d740efad564f0f">Les coordonnées sur le globe</a>
+<li><a href="#définir-la-position-des-labels-qgis:6619935c858d08d5e3e4515c2dca42d4">Définir la position des labels QGIS</a>
 <ul>
-<li><a href="#la-latitude:59e9885e5dad1c29d4d740efad564f0f">La latitude</a></li>
-<li><a href="#la-longitude:59e9885e5dad1c29d4d740efad564f0f">La longitude</a></li>
-<li><a href="#degrés-et-sous-degrés:59e9885e5dad1c29d4d740efad564f0f">Degrés et sous-degrés</a></li>
+<li><a href="#1-ajouter-des-colonnes-à-la-table-des-attributs:6619935c858d08d5e3e4515c2dca42d4">1- Ajouter des colonnes à la table des attributs.</a></li>
+<li><a href="#2-faire-correspondre-les-nouvelles-colonnes-x-et-y-aux-coordonnées-des-labels:6619935c858d08d5e3e4515c2dca42d4">2- Faire correspondre les nouvelles colonnes x et y aux coordonnées des labels</a></li>
+<li><a href="#3-positionner-les-labels:6619935c858d08d5e3e4515c2dca42d4">3- Positionner les labels</a></li>
 </ul></li>
 </ul>
 </nav></div>

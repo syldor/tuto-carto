@@ -6,8 +6,76 @@
     <language>en-us</language>
     <author>Sylvain Dorey</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-05 11:09:47 &#43;0700 ICT</updated>
+    <updated>2017-04-06 10:33:01 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Chosir la position des labels dans QGIS</title>
+          <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
+          <pubDate>Thu, 06 Apr 2017 10:33:01 ICT</pubDate>
+          <author>Sylvain Dorey</author>
+          <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
+          <description>
+
+&lt;h1 id=&#34;définir-la-position-des-labels-qgis:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;Définir la position des labels QGIS&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Cet article a été testé pour QGIS Wien 2.8&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;QGIS positionne automatiquement ces labels, et offre différentes options pour modifier sa méthode: on peut par exemple forcer un décalage automatique du texte depuis le point d&amp;rsquo;ancrage. Cependant cette modification ne peut pas se faire label par label. La méthode suivante permet de positionner le texte des labels.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/qgis-labels/1.png&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;1-ajouter-des-colonnes-à-la-table-des-attributs:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;1- Ajouter des colonnes à la table des attributs.&lt;/h2&gt;
+
+&lt;p&gt;Clique droit sur la couche à modifier, puis &amp;ldquo;Open Attributes Table&amp;rdquo;. Pour ajouter une colonne, passer en mode édition et cliquer sur l&amp;rsquo;icône ajouter.
+&lt;blockquote&gt;
+    &lt;p class=&#34;remark&#34;&gt;S&amp;rsquo;il est impossible de passer en mode édition, celà vient surement du fait que la couche est en geojson ou csv, il suffit de la convertir en shapefile: clique droit sur la couche, save As, sélectionner Shapefile. Copier coller le style si besoin puis supprimer la couche initiale.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/qgis-labels/2.png&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Trois colonnes à ajouter:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;x: contient l&amp;rsquo;asbcisse du label
+
+&lt;ul&gt;
+&lt;li&gt;name: x&lt;/li&gt;
+&lt;li&gt;type: Decimal number (real)&lt;/li&gt;
+&lt;li&gt;Width: Nombre de chiffres: 20 est bien suffisant&lt;/li&gt;
+&lt;li&gt;Precision: Nombre de chiffres après la virgule: 10 est bien suffisant&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;y: contient l&amp;rsquo;ordonnée du label
+
+&lt;ul&gt;
+&lt;li&gt;name: x&lt;/li&gt;
+&lt;li&gt;type: Decimal number (real)&lt;/li&gt;
+&lt;li&gt;Width: 20&lt;/li&gt;
+&lt;li&gt;Precision: 10&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Enregistrer les changements.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-faire-correspondre-les-nouvelles-colonnes-x-et-y-aux-coordonnées-des-labels:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;2- Faire correspondre les nouvelles colonnes x et y aux coordonnées des labels&lt;/h2&gt;
+
+&lt;p&gt;Aller dans le menu des labels &amp;gt;&amp;gt; placement, et faire correspondre la coordonnée X du label à la colonne x de la couche, et Y à y.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/qgis-labels/3.png&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Sélectionner x dans le menu déroulant qui apparaît, option &amp;ldquo;Attribu Field &amp;gt;&amp;gt; Field Type&amp;rdquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-positionner-les-labels:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;3- Positionner les labels&lt;/h2&gt;
+
+&lt;p&gt;Une fois les deux étapes faites, passer la couche en mode édition, le bouton pour bouger les labels est actif, cliquer dessus et positionner les labels à leur place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/qgis-labels/4.png&#34;&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
