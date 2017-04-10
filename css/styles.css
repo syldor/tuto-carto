@@ -77,8 +77,8 @@ header.site {
 }
 
 header.site .title {
-/*  font-family: 'Marcellus SC', cursive;
-*/  font-size: 2rem;
+  font-family: 'Marcellus SC', cursive;
+  font-size: 2rem;
 }
 
 header.site .title a {

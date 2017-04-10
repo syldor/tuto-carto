@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tuto Carto: blog autour des cartes </title>
-    <link>https://www.tuto-carto.fr/</link>
+    <link>https://www.tuto-carto.fr/index.xml</link>
     <language>en-us</language>
     <author>Sylvain Dorey</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-06 10:33:01 &#43;0700 ICT</updated>
+    <updated>2017-04-06 10:33:01 &#43;0700 &#43;0700</updated>
 
     
       
         <item>
           <title>Chosir la position des labels dans QGIS</title>
           <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
-          <pubDate>Thu, 06 Apr 2017 10:33:01 ICT</pubDate>
+          <pubDate>Thu, 06 Apr 2017 10:33:01 &#43;0700</pubDate>
           <author>Sylvain Dorey</author>
           <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
           <description>
 
-&lt;h1 id=&#34;définir-la-position-des-labels-qgis:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;Définir la position des labels QGIS&lt;/h1&gt;
+&lt;h1 id=&#34;définir-la-position-des-labels-qgis&#34;&gt;Définir la position des labels QGIS&lt;/h1&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Cet article a été testé pour QGIS Wien 2.8&lt;/p&gt;
@@ -28,7 +28,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/qgis-labels/1.png&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;1-ajouter-des-colonnes-à-la-table-des-attributs:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;1- Ajouter des colonnes à la table des attributs.&lt;/h2&gt;
+&lt;h2 id=&#34;1-ajouter-des-colonnes-à-la-table-des-attributs&#34;&gt;1- Ajouter des colonnes à la table des attributs.&lt;/h2&gt;
 
 &lt;p&gt;Clique droit sur la couche à modifier, puis &amp;ldquo;Open Attributes Table&amp;rdquo;. Pour ajouter une colonne, passer en mode édition et cliquer sur l&amp;rsquo;icône ajouter.
 &lt;blockquote&gt;
@@ -60,7 +60,7 @@
 
 &lt;p&gt;Enregistrer les changements.&lt;/p&gt;
 
-&lt;h2 id=&#34;2-faire-correspondre-les-nouvelles-colonnes-x-et-y-aux-coordonnées-des-labels:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;2- Faire correspondre les nouvelles colonnes x et y aux coordonnées des labels&lt;/h2&gt;
+&lt;h2 id=&#34;2-faire-correspondre-les-nouvelles-colonnes-x-et-y-aux-coordonnées-des-labels&#34;&gt;2- Faire correspondre les nouvelles colonnes x et y aux coordonnées des labels&lt;/h2&gt;
 
 &lt;p&gt;Aller dans le menu des labels &amp;gt;&amp;gt; placement, et faire correspondre la coordonnée X du label à la colonne x de la couche, et Y à y.&lt;/p&gt;
 
@@ -68,7 +68,7 @@
 
 &lt;p&gt;Sélectionner x dans le menu déroulant qui apparaît, option &amp;ldquo;Attribu Field &amp;gt;&amp;gt; Field Type&amp;rdquo;&lt;/p&gt;
 
-&lt;h2 id=&#34;3-positionner-les-labels:6619935c858d08d5e3e4515c2dca42d4&#34;&gt;3- Positionner les labels&lt;/h2&gt;
+&lt;h2 id=&#34;3-positionner-les-labels&#34;&gt;3- Positionner les labels&lt;/h2&gt;
 
 &lt;p&gt;Une fois les deux étapes faites, passer la couche en mode édition, le bouton pour bouger les labels est actif, cliquer dessus et positionner les labels à leur place.&lt;/p&gt;
 
@@ -81,12 +81,12 @@
         <item>
           <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
           <link>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
-          <pubDate>Wed, 05 Apr 2017 11:09:47 ICT</pubDate>
+          <pubDate>Wed, 05 Apr 2017 11:09:47 &#43;0700</pubDate>
           <author>Sylvain Dorey</author>
           <guid>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
           <description>
 
-&lt;h1 id=&#34;les-bases-de-données:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les bases de données&lt;/h1&gt;
+&lt;h1 id=&#34;les-bases-de-données&#34;&gt;Les bases de données&lt;/h1&gt;
 
 &lt;p&gt;Dans son acceptation globale, une base de donnée est uniquement un système de stockage des données. Il peut s’agir d’un gros classeur dans une armoire, ou encore de fichiers sur un disque dur comme présentés dans la section précédente. Cependant en pratique, quand on parle de base de données, il s’agit d’un système informatique très structuré qui permet de stocker et de consulter des données rangées à l’intérieur.&lt;/p&gt;
 
@@ -101,9 +101,9 @@
 &lt;p&gt;Ainsi la base de données n’est en rien une restriction. C’est au contraire un outil plus puissant que de simples fichiers. Cependant comme souvent un outil plus puissant se révèle plus complexe à utiliser. Il ne faut pas être rebuté par ça, les bases de données sont un sujet très intéressant et leur utilisation, si elle n’est pas d’accès immédiat, est à la portée de toute personne qui s’y intéresse.
 Nous allons voir par la suite plus en détails les bases de données et leurs extensions géographiques.&lt;/p&gt;
 
-&lt;h1 id=&#34;les-bases-de-données-sql:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les bases de données SQL&lt;/h1&gt;
+&lt;h1 id=&#34;les-bases-de-données-sql&#34;&gt;Les bases de données SQL&lt;/h1&gt;
 
-&lt;h2 id=&#34;les-requêtes:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les requêtes&lt;/h2&gt;
+&lt;h2 id=&#34;les-requêtes&#34;&gt;Les requêtes&lt;/h2&gt;
 
 &lt;p&gt;La plupart des noms cités dans la section précédente avaient un point commun, les trois lettres SQL. Microsoft SQL Server, PostgreSQL, mySQL. Cela signifie Structured Query Language. C’est le langage utilisé pour interagir avec une base de données SQL.&lt;/p&gt;
 
@@ -168,7 +168,7 @@ Le SQL est un langage très simple à maîtriser, même si au début le fait d�
 
 &lt;p&gt;Le SQL n’est pas limité dans ses possibilités, il est possible de modifier plusieurs lignes au même moment, ajouter des lignes avec des valeurs nulles, créer des nouvelles tables, etc. Il suffit pour cela de regarder la documentation, des tutoriels, ou simplement de taper ce qu’o souhaite faire dans google pour apprendre les mots clés à utiliser.&lt;/p&gt;
 
-&lt;h2 id=&#34;les-types-de-données:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les types de données&lt;/h2&gt;
+&lt;h2 id=&#34;les-types-de-données&#34;&gt;Les types de données&lt;/h2&gt;
 
 &lt;p&gt;Les bases de données SQL sont très structurées. Essayer de rentrer un nombre à la place de la ville engendrerait une erreur. A la création d’une table, il est nécessaire de spécifier quel valeur est attendue dans chaque colonne. On appelle ça le type d’une colonne. Ils sont prédéfinis et on ne peut utiliser que ceux proposés par la base de données. Ils couvrent cependant la plupart des cas imaginables. Voilà la liste des types utilisés dans notre listing:&lt;/p&gt;
 
@@ -184,7 +184,7 @@ Le SQL est un langage très simple à maîtriser, même si au début le fait d�
 &lt;p&gt;On n’utilise que deux types parmi la large panoplie proposée. Character Varying représente une chaîne de caractères dont la longueur peut varier. On ne sait pas à l’avance combien de lettres comprendront le nom ou la ville de notre client. Float est la façon de nommer les nombres à virgule, comme la longitude et la latitude.
 D’autres types sont disponibles: Integer permet de stocker des nombres dans virgules, date permet de stocker un horaire.&lt;/p&gt;
 
-&lt;h2 id=&#34;les-fonctions:8810a78570fa75d0acb0780ac3be473e&#34;&gt;Les fonctions&lt;/h2&gt;
+&lt;h2 id=&#34;les-fonctions&#34;&gt;Les fonctions&lt;/h2&gt;
 
 &lt;p&gt;Nous avons vus deux notions importantes du SQL: les requêtes et les types. Un dernier atout du SQL est d’avoir des fonctions permettant d’agir sur les données. Ces fonctions sont propres à chacune des bases de données et peuvent varier dans le nom mais la plupart sont communes.&lt;/p&gt;
 
@@ -208,19 +208,19 @@ D’autres types sont disponibles: Integer permet de stocker des nombres dans vi
         <item>
           <title>Longitude et Latitude</title>
           <link>https://www.tuto-carto.fr/post/longitude-latitude/</link>
-          <pubDate>Tue, 04 Apr 2017 15:20:35 ICT</pubDate>
+          <pubDate>Tue, 04 Apr 2017 15:20:35 &#43;0700</pubDate>
           <author>Sylvain Dorey</author>
           <guid>https://www.tuto-carto.fr/post/longitude-latitude/</guid>
           <description>
 
-&lt;h1 id=&#34;les-coordonnées-sur-le-globe:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;Les coordonnées sur le globe&lt;/h1&gt;
+&lt;h1 id=&#34;les-coordonnées-sur-le-globe&#34;&gt;Les coordonnées sur le globe&lt;/h1&gt;
 
 &lt;p&gt;La longitude et latitude permettent de donner une adresse à tous les lieux de la Terre. Il s’agit donc de repérer un endroit sur la sphère terrestre. Un point se repère par la distance à l’équateur (latitude) et la distance au Méridien de Greenwitch (longitude). Ces données sont en degrés (°): un degré mesure l’écartement d’un angle, comme par exemple l’angle droit est de 90° dans un triangle rectangle.&lt;/p&gt;
 
 &lt;p&gt;Note: L’expression française “sous d’autres latitudes” fait bien référence à des endroits plus chauds, plus proches de l’équateur, que là où nous nous trouvons. Ainsi il est facile de se souvenir que la latitude désigne la distance à l’équateur.
 Ce sont des angles, formés avec des lignes caractéristiques de la Terre comme l’équateur.&lt;/p&gt;
 
-&lt;h2 id=&#34;la-latitude:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;La latitude&lt;/h2&gt;
+&lt;h2 id=&#34;la-latitude&#34;&gt;La latitude&lt;/h2&gt;
 
 &lt;p&gt;La latitude d’un point représente l’angle entre le plan de l’équateur et une droite passant par le centre de la Terre et l’endroit du point à repérer.
 Cet angle varie entre 0 et 90° (angle droit) et on précise s’il s’agit de l’hémisphère Nord ou Sud. Ainsi la latitude de la tour Eiffel est 48°85 Nord.
@@ -228,7 +228,7 @@ Les cercles de même latitude sont appelées parallèles et sont des cercles all
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/longlat/latitude.png&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;la-longitude:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;La longitude&lt;/h2&gt;
+&lt;h2 id=&#34;la-longitude&#34;&gt;La longitude&lt;/h2&gt;
 
 &lt;p&gt;La longitude d’un point représente sa position Est-Ouest. Il s’agit de l’angle formé avec les méridien de référence, Greenwitch. Il s’agit d’un angle entre 0 et 180°, avec l’indication Est ou Ouest selon qu’on se trouve à droite ou à gauche du méridien de référence.
 La longitude de la Tour Eiffel est 2.29° Est.
@@ -236,7 +236,7 @@ Les zones de même longitude sont appelées méridiens et sont des demi-cercles.
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/longlat/longitude.png&#34;&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;degrés-et-sous-degrés:59e9885e5dad1c29d4d740efad564f0f&#34;&gt;Degrés et sous-degrés&lt;/h2&gt;
+&lt;h2 id=&#34;degrés-et-sous-degrés&#34;&gt;Degrés et sous-degrés&lt;/h2&gt;
 
 &lt;p&gt;Il y a deux façons d’écrire les degrés, plus particulièrement les sous-degrés, c’est à dire ce qui vient après la virgule.
 1° représente &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;360&lt;/sub&gt; d’un tour complet.
@@ -264,12 +264,12 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
         <item>
           <title>Customiser une carte Google Maps</title>
           <link>https://www.tuto-carto.fr/post/google-maps/</link>
-          <pubDate>Tue, 04 Apr 2017 14:34:29 ICT</pubDate>
+          <pubDate>Tue, 04 Apr 2017 14:34:29 &#43;0700</pubDate>
           <author>Sylvain Dorey</author>
           <guid>https://www.tuto-carto.fr/post/google-maps/</guid>
           <description>
 
-&lt;h1 id=&#34;google-maps-pour-créer-des-cartes-simples:2e0df0bef7444dda2b530d72f1f2339b&#34;&gt;Google Maps pour créer des cartes simples&lt;/h1&gt;
+&lt;h1 id=&#34;google-maps-pour-créer-des-cartes-simples&#34;&gt;Google Maps pour créer des cartes simples&lt;/h1&gt;
 
 &lt;p&gt;Google Maps est une application permettant de consulter les cartes du monde à différents zooms, mais elle permet aussi de créer ses propres cartes en utilisant son fond de carte comme base. C&amp;rsquo;est très utile quand on a besoin de positioner rapidement des éléments et de les partager.&lt;/p&gt;
 
@@ -327,12 +327,12 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
         <item>
           <title>Les Projections</title>
           <link>https://www.tuto-carto.fr/post/projections/</link>
-          <pubDate>Mon, 03 Apr 2017 16:56:16 ICT</pubDate>
+          <pubDate>Mon, 03 Apr 2017 16:56:16 &#43;0700</pubDate>
           <author>Sylvain Dorey</author>
           <guid>https://www.tuto-carto.fr/post/projections/</guid>
           <description>
 
-&lt;h1 id=&#34;méthode:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Méthode&lt;/h1&gt;
+&lt;h1 id=&#34;méthode&#34;&gt;Méthode&lt;/h1&gt;
 
 &lt;p&gt;Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.&lt;/p&gt;
 
@@ -353,7 +353,7 @@ Une “portion de la terre” est en 3 dimensions et une “feuille” est à de
 
 &lt;p&gt;Pour cela, on a recours à deux étapes.&lt;/p&gt;
 
-&lt;h2 id=&#34;1è-étape-trouver-une-forme-pour-la-terre:bc646ba2fe612c0702e39589e75e6518&#34;&gt;1è étape: trouver une forme pour la Terre&lt;/h2&gt;
+&lt;h2 id=&#34;1è-étape-trouver-une-forme-pour-la-terre&#34;&gt;1è étape: trouver une forme pour la Terre&lt;/h2&gt;
 
 &lt;p&gt;La première étape consiste à définir une forme pour la Terre, il s’agit de la modéliser. On doit simplifier certaines de ses caractéristiques pour en avoir un modèle utilisable. Deux éléments seront simplifiés:
 La forme à la surface
@@ -410,7 +410,7 @@ La forme générale.&lt;/p&gt;
 WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système GPS actuel.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;2è-étape-projeter-en-2-dimensions:bc646ba2fe612c0702e39589e75e6518&#34;&gt;2è étape: Projeter en 2-dimensions&lt;/h2&gt;
+&lt;h2 id=&#34;2è-étape-projeter-en-2-dimensions&#34;&gt;2è étape: Projeter en 2-dimensions&lt;/h2&gt;
 
 &lt;p&gt;On se retrouve à présent avec une modélisation de la Terre par un ellipsoïde ayant une position bien précise dans l’espace ainsi qu’une orientation. On va maintenant chercher une méthode pour que chaque point de l’ellipsoïde puisse se retrouver sur un espace en 2 dimensions. On veut projeter notre sphère sur une surface plane.&lt;/p&gt;
 
@@ -436,9 +436,9 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Une projection ne peut pas être à la fois conforme et équivalente.&lt;/p&gt;
 
-&lt;h1 id=&#34;quelques-exemples-de-projections:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Quelques exemples de projections&lt;/h1&gt;
+&lt;h1 id=&#34;quelques-exemples-de-projections&#34;&gt;Quelques exemples de projections&lt;/h1&gt;
 
-&lt;h2 id=&#34;projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection conique de Lambert&lt;/h2&gt;
+&lt;h2 id=&#34;projection-conique-de-lambert&#34;&gt;Projection conique de Lambert&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/lambert.bmp&#34; alt=&#34;Sphère en 3D&#34; /&gt;&lt;/p&gt;
 
@@ -446,7 +446,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/France-Lambert.bmp&#34; alt=&#34;France Lambert&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;projection-de-mercator:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection de Mercator&lt;/h2&gt;
+&lt;h2 id=&#34;projection-de-mercator&#34;&gt;Projection de Mercator&lt;/h2&gt;
 
 &lt;p&gt;Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.&lt;/p&gt;
 
@@ -460,7 +460,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Rem: Les cartes en ligne utilisent la projection dite Web Mercator, qui coïncide avec Mercator à petite échelle (peu zoomé, carte du monde), mais utilise une sphère au lieu d’un ellipsoïde pour les grandes échelles (très zoomé, carte de rue).&lt;/p&gt;
 
-&lt;h2 id=&#34;projection-de-gall-peters:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection de Gall-Peters&lt;/h2&gt;
+&lt;h2 id=&#34;projection-de-gall-peters&#34;&gt;Projection de Gall-Peters&lt;/h2&gt;
 
 &lt;p&gt;La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.&lt;/p&gt;
 
@@ -472,7 +472,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;En revanche, Gall-Peters présente de fortes distorsions de formes.&lt;/p&gt;
 
-&lt;h2 id=&#34;projection-gnomonique:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Projection Gnomonique&lt;/h2&gt;
+&lt;h2 id=&#34;projection-gnomonique&#34;&gt;Projection Gnomonique&lt;/h2&gt;
 
 &lt;p&gt;La dernière projection présentée est une projection azimutale, à savoir la projection de la sphère sur un plan.&lt;/p&gt;
 
@@ -482,7 +482,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/gnomonique.bmp&#34; alt=&#34;Gnomonique&#34; /&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;récapitulatif:bc646ba2fe612c0702e39589e75e6518&#34;&gt;Récapitulatif&lt;/h1&gt;
+&lt;h1 id=&#34;récapitulatif&#34;&gt;Récapitulatif&lt;/h1&gt;
 
 &lt;p&gt;Ainsi on a vu que pour visualiser des données géographiques sur une surface 2D, on a besoin de choisir soi-même une projection, à savoir un datum (ellipsoïde + sa position par rapport à la Terre) et une projection.
 Mercator est la projection la plus communément utilisée, mais il peut être utile d’en considérer d’autres:
