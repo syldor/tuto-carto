@@ -96,7 +96,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bdd1/schema.png&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;Celà ressemble à l&amp;rsquo;utilisation d&amp;rsquo;un simple logiciel pour manipuler les données, comme avec Word. Cependant l’utilisateur n’a pas accès aux fichiers finaux, il ne peut pas les partager en les envoyant par email. Cependant, de multiples utilisateurs peuvent accéder à la base de données depuis différents ordinateurs à travers un réseau (internet) et il est possible d’exporter les données dans un format fichier.&lt;/p&gt;
+&lt;p&gt;Cela ressemble à l&amp;rsquo;utilisation d&amp;rsquo;un simple logiciel pour manipuler les données, comme avec Word. Cependant l’utilisateur n’a pas accès aux fichiers finaux, il ne peut pas les partager en les envoyant par email. Cependant, de multiples utilisateurs peuvent accéder à la base de données depuis différents ordinateurs à travers un réseau (internet) et il est possible d’exporter les données dans un format fichier.&lt;/p&gt;
 
 &lt;p&gt;Ainsi la base de données n’est en rien une restriction. C’est au contraire un outil plus puissant que de simples fichiers. Cependant comme souvent un outil plus puissant se révèle plus complexe à utiliser. Il ne faut pas être rebuté par ça, les bases de données sont un sujet très intéressant et leur utilisation, si elle n’est pas d’accès immédiat, est à la portée de toute personne qui s’y intéresse.
 Nous allons voir par la suite plus en détails les bases de données et leurs extensions géographiques.&lt;/p&gt;
