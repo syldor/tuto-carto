@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tuto Carto: blog autour des cartes </title>
+    <title>Posts on Tuto Carto: blog autour des cartes</title>
     <link>https://www.tuto-carto.fr/post/index.xml</link>
+    <description>Recent content in Posts on Tuto Carto: blog autour des cartes</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Sylvain Dorey</author>
-    <rights>(C) 2017</rights>
-    <updated>2017-04-06 10:33:01 &#43;0700 &#43;0700</updated>
-
+    <lastBuildDate>Thu, 06 Apr 2017 10:33:01 +0700</lastBuildDate>
+    <atom:link href="https://www.tuto-carto.fr/post/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Choisir la position des labels dans QGIS</title>
+      <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
+      <pubDate>Thu, 06 Apr 2017 10:33:01 +0700</pubDate>
       
-        <item>
-          <title>Choisir la position des labels dans QGIS</title>
-          <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
-          <pubDate>Thu, 06 Apr 2017 10:33:01 &#43;0700</pubDate>
-          <author>Sylvain Dorey</author>
-          <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
-          <description>
+      <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
+      <description>
 
 &lt;h1 id=&#34;définir-la-position-des-labels-qgis&#34;&gt;Définir la position des labels QGIS&lt;/h1&gt;
 
@@ -74,17 +73,15 @@
 
 &lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/qgis-labels/4.png&#34;&gt;&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
+      <link>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
+      <pubDate>Wed, 05 Apr 2017 11:09:47 +0700</pubDate>
       
-        <item>
-          <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
-          <link>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
-          <pubDate>Wed, 05 Apr 2017 11:09:47 &#43;0700</pubDate>
-          <author>Sylvain Dorey</author>
-          <guid>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
-          <description>
+      <guid>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
+      <description>
 
 &lt;h1 id=&#34;les-bases-de-données&#34;&gt;Les bases de données&lt;/h1&gt;
 
@@ -201,17 +198,15 @@ D’autres types sont disponibles: Integer permet de stocker des nombres dans vi
 
 &lt;p&gt;De nombreuses autres fonctions sont disponibles, comme la valeur absolue, la racine carrée, et bien d’autres. Il est même possible de créer ses propres fonctions en combinant celles déjà fournies.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Longitude et Latitude</title>
+      <link>https://www.tuto-carto.fr/post/longitude-latitude/</link>
+      <pubDate>Tue, 04 Apr 2017 15:20:35 +0700</pubDate>
       
-        <item>
-          <title>Longitude et Latitude</title>
-          <link>https://www.tuto-carto.fr/post/longitude-latitude/</link>
-          <pubDate>Tue, 04 Apr 2017 15:20:35 &#43;0700</pubDate>
-          <author>Sylvain Dorey</author>
-          <guid>https://www.tuto-carto.fr/post/longitude-latitude/</guid>
-          <description>
+      <guid>https://www.tuto-carto.fr/post/longitude-latitude/</guid>
+      <description>
 
 &lt;h1 id=&#34;les-coordonnées-sur-le-globe&#34;&gt;Les coordonnées sur le globe&lt;/h1&gt;
 
@@ -257,17 +252,15 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
 
 &lt;p&gt;Ces deux notations sont équivalentes mais ne doivent pas être confondues. Dans un cas il y a ° à la fin des premiers chiffres, dans l’autre ° est à la fin de tout le nombre, collé à la lettre.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Customiser une carte Google Maps</title>
+      <link>https://www.tuto-carto.fr/post/google-maps/</link>
+      <pubDate>Tue, 04 Apr 2017 14:34:29 +0700</pubDate>
       
-        <item>
-          <title>Customiser une carte Google Maps</title>
-          <link>https://www.tuto-carto.fr/post/google-maps/</link>
-          <pubDate>Tue, 04 Apr 2017 14:34:29 &#43;0700</pubDate>
-          <author>Sylvain Dorey</author>
-          <guid>https://www.tuto-carto.fr/post/google-maps/</guid>
-          <description>
+      <guid>https://www.tuto-carto.fr/post/google-maps/</guid>
+      <description>
 
 &lt;h1 id=&#34;google-maps-pour-créer-des-cartes-simples&#34;&gt;Google Maps pour créer des cartes simples&lt;/h1&gt;
 
@@ -320,17 +313,15 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
 &lt;li&gt;&lt;a href=&#34;https://www.zeemaps.com/&#34;&gt;ZeeMaps&lt;/a&gt;: Permet d’ajouter du son sur chaque repère, d’en choisir les icônes, etc.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Les Projections</title>
+      <link>https://www.tuto-carto.fr/post/projections/</link>
+      <pubDate>Mon, 03 Apr 2017 16:56:16 +0700</pubDate>
       
-        <item>
-          <title>Les Projections</title>
-          <link>https://www.tuto-carto.fr/post/projections/</link>
-          <pubDate>Mon, 03 Apr 2017 16:56:16 &#43;0700</pubDate>
-          <author>Sylvain Dorey</author>
-          <guid>https://www.tuto-carto.fr/post/projections/</guid>
-          <description>
+      <guid>https://www.tuto-carto.fr/post/projections/</guid>
+      <description>
 
 &lt;h1 id=&#34;méthode&#34;&gt;Méthode&lt;/h1&gt;
 
@@ -541,9 +532,7 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
 
 &lt;p&gt;Il existe des projections plus exotiques utilisant d’autres surfaces que les trois citées ci-dessus, on recense plus de 200 projections.&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
-
   </channel>
 </rss>
