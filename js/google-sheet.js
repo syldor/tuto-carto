@@ -31,9 +31,7 @@ $("#cartoform").submit(function(event){
 
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
-        console.log("ok");
-        // $("#cartoform").replaceWith('<i class="icon-ok" style="text-align:center;margin:0 auto";></i>');
-        $("#cartoform").replaceWith('OK');
+        $("#cartoform").replaceWith('<i class="fa fa-check-circle" style="text-align:center;margin:0 auto; color: #4CAF50; font-size: 3em; padding-top: 0.5em";></i>');
     });
 
     // Callback handler that will be called on failure

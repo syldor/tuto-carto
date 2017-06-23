@@ -52,8 +52,49 @@ h2 {
 }
 
 .input-email {
-    font-size: 16px;
+  font-size: 16px;
   padding: 14px;
   border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
 }
+
+.title > a {
+  font-family: 'Open Sans';
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header > .title {
+  vertical-align: middle;
+  display:inline-block;
+}
+
+header.site {
+    background-image: url('/images/carte.png');
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    height: 10em;
+}
+
+.logo {
+  height: 7em;
+  width: auto !important;
+  vertical-align: middle;
+  display:inline-block;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

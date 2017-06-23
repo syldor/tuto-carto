@@ -70,13 +70,13 @@ h4 { font-size: 1rem; line-height: 1rem; }
 h5 { font-size: 1rem; line-height: 1rem; }
 
 header.site {
-  padding: 2rem 0;
-  text-align: center;
+/*  padding: 2rem 0;
+*/  text-align: center;
   background-color: #fff;
   margin-bottom: 2rem;
 }
 
-header.site .title {
+/*header.site .title {
   font-family: 'Marcellus SC', cursive;
   font-size: 2rem;
 }
@@ -84,7 +84,7 @@ header.site .title {
 header.site .title a {
   text-decoration: none;
 }
-
+*/
 footer.site {
   padding: 3rem 0;
   text-align: center;
@@ -171,11 +171,11 @@ article.li time {
   line-height: 1rem;
 }
 
-article.li .title {
+/*article.li .title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
+}*/
 
 article.li .summary {
   word-break: break-all;
