@@ -3,7 +3,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <meta name="generator" content="Hugo 0.19" />
+=======
+    <meta name="generator" content="Hugo 0.16-DEV" />
+>>>>>>> 64227f986266e7e6ed001be96d69dd93a712b8ee
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
@@ -64,7 +68,11 @@
           <meta itemprop="name" content="Tuto Carto: blog autour des cartes">
         </div>
         <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+<<<<<<< HEAD
           <meta itemprop="name" content="map[gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username twitter:xxxxxxx github:xxxxxxx website:http://www.foo.com facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx firstname:Sylvain lastname:LastName gender:(fe)?male image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png]">
+=======
+          <meta itemprop="name" content="">
+>>>>>>> 64227f986266e7e6ed001be96d69dd93a712b8ee
         </div>
 
         <div class="image" style="background-image: url(https://www.tuto-carto.fr/images/projections/projection-de-lambert.bmp);"></div>
@@ -77,7 +85,11 @@
         <div class="article-body" itemprop="articleBody">
           
 
+<<<<<<< HEAD
 <h1 id="méthode">Méthode</h1>
+=======
+<h1 id="méthode:bc646ba2fe612c0702e39589e75e6518">Méthode</h1>
+>>>>>>> 64227f986266e7e6ed001be96d69dd93a712b8ee
 
 <p>Ce qui nous vient à l’esprit en premier quand on pense a une carte, c’est une représentation sur papier d’une portion de l’espace, une partie de notre Terre. D’autres formes de cartes peuvent exister, celles d’un monde fictif, ou encore des cartes conceptuelles ne représentant pas véritablement un espace mais un réseau, ou encore une schématisation comme le plan du métro parisien: il s’agit bien d’une étendue spatiale mais qui ne respecte pas exactement la réalité de la construction, seule les interconnexions sont considérées.</p>
 
@@ -98,7 +110,7 @@ Une “portion de la terre” est en 3 dimensions et une “feuille” est à de
 
 <p>Pour cela, on a recours à deux étapes.</p>
 
-<h2 id="1è-étape-trouver-une-forme-pour-la-terre">1è étape: trouver une forme pour la Terre</h2>
+<h2 id="1è-étape-trouver-une-forme-pour-la-terre:bc646ba2fe612c0702e39589e75e6518">1è étape: trouver une forme pour la Terre</h2>
 
 <p>La première étape consiste à définir une forme pour la Terre, il s’agit de la modéliser. On doit simplifier certaines de ses caractéristiques pour en avoir un modèle utilisable. Deux éléments seront simplifiés:
 La forme à la surface
@@ -155,7 +167,7 @@ La forme générale.</p>
 WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système GPS actuel.</p></li>
 </ul>
 
-<h2 id="2è-étape-projeter-en-2-dimensions">2è étape: Projeter en 2-dimensions</h2>
+<h2 id="2è-étape-projeter-en-2-dimensions:bc646ba2fe612c0702e39589e75e6518">2è étape: Projeter en 2-dimensions</h2>
 
 <p>On se retrouve à présent avec une modélisation de la Terre par un ellipsoïde ayant une position bien précise dans l’espace ainsi qu’une orientation. On va maintenant chercher une méthode pour que chaque point de l’ellipsoïde puisse se retrouver sur un espace en 2 dimensions. On veut projeter notre sphère sur une surface plane.</p>
 
@@ -181,9 +193,9 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>Une projection ne peut pas être à la fois conforme et équivalente.</p>
 
-<h1 id="quelques-exemples-de-projections">Quelques exemples de projections</h1>
+<h1 id="quelques-exemples-de-projections:bc646ba2fe612c0702e39589e75e6518">Quelques exemples de projections</h1>
 
-<h2 id="projection-conique-de-lambert">Projection conique de Lambert</h2>
+<h2 id="projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518">Projection conique de Lambert</h2>
 
 <p><img src="/images/projections/projection-de-lambert.bmp" alt="Projection de Lambert" /></p>
 
@@ -191,7 +203,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p><img src="/images/projections/France-projection-Lambert.bmp" alt="France Projection de Lambert" /></p>
 
-<h2 id="projection-de-mercator">Projection de Mercator</h2>
+<h2 id="projection-de-mercator:bc646ba2fe612c0702e39589e75e6518">Projection de Mercator</h2>
 
 <p>Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.</p>
 
@@ -205,7 +217,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>Rem: Les cartes en ligne utilisent la projection dite Web Mercator, qui coïncide avec Mercator à petite échelle (peu zoomé, carte du monde), mais utilise une sphère au lieu d’un ellipsoïde pour les grandes échelles (très zoomé, carte de rue).</p>
 
-<h2 id="projection-de-gall-peters">Projection de Gall-Peters</h2>
+<h2 id="projection-de-gall-peters:bc646ba2fe612c0702e39589e75e6518">Projection de Gall-Peters</h2>
 
 <p>La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.</p>
 
@@ -217,7 +229,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p>En revanche, Gall-Peters présente de fortes distorsions de formes.</p>
 
-<h2 id="projection-gnomonique">Projection Gnomonique</h2>
+<h2 id="projection-gnomonique:bc646ba2fe612c0702e39589e75e6518">Projection Gnomonique</h2>
 
 <p>La dernière projection présentée est une projection azimutale, à savoir la projection de la sphère sur un plan.</p>
 
@@ -227,7 +239,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 <p><img src="/images/projections/projection-gnomonique.bmp" alt="Projection Gnomonique" /></p>
 
-<h1 id="récapitulatif">Récapitulatif</h1>
+<h1 id="récapitulatif:bc646ba2fe612c0702e39589e75e6518">Récapitulatif</h1>
 
 <p>Ainsi on a vu que pour visualiser des données géographiques sur une surface 2D, on a besoin de choisir soi-même une projection, à savoir un datum (ellipsoïde + sa position par rapport à la Terre) et une projection.
 Mercator est la projection la plus communément utilisée, mais il peut être utile d’en considérer d’autres:
@@ -315,19 +327,19 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
     <header><div class="title">Table des matières</div></header>
     <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li><a href="#méthode">Méthode</a>
+<li><a href="#méthode:bc646ba2fe612c0702e39589e75e6518">Méthode</a>
 <ul>
-<li><a href="#1è-étape-trouver-une-forme-pour-la-terre">1è étape: trouver une forme pour la Terre</a></li>
-<li><a href="#2è-étape-projeter-en-2-dimensions">2è étape: Projeter en 2-dimensions</a></li>
+<li><a href="#1è-étape-trouver-une-forme-pour-la-terre:bc646ba2fe612c0702e39589e75e6518">1è étape: trouver une forme pour la Terre</a></li>
+<li><a href="#2è-étape-projeter-en-2-dimensions:bc646ba2fe612c0702e39589e75e6518">2è étape: Projeter en 2-dimensions</a></li>
 </ul></li>
-<li><a href="#quelques-exemples-de-projections">Quelques exemples de projections</a>
+<li><a href="#quelques-exemples-de-projections:bc646ba2fe612c0702e39589e75e6518">Quelques exemples de projections</a>
 <ul>
-<li><a href="#projection-conique-de-lambert">Projection conique de Lambert</a></li>
-<li><a href="#projection-de-mercator">Projection de Mercator</a></li>
-<li><a href="#projection-de-gall-peters">Projection de Gall-Peters</a></li>
-<li><a href="#projection-gnomonique">Projection Gnomonique</a></li>
+<li><a href="#projection-conique-de-lambert:bc646ba2fe612c0702e39589e75e6518">Projection conique de Lambert</a></li>
+<li><a href="#projection-de-mercator:bc646ba2fe612c0702e39589e75e6518">Projection de Mercator</a></li>
+<li><a href="#projection-de-gall-peters:bc646ba2fe612c0702e39589e75e6518">Projection de Gall-Peters</a></li>
+<li><a href="#projection-gnomonique:bc646ba2fe612c0702e39589e75e6518">Projection Gnomonique</a></li>
 </ul></li>
-<li><a href="#récapitulatif">Récapitulatif</a></li>
+<li><a href="#récapitulatif:bc646ba2fe612c0702e39589e75e6518">Récapitulatif</a></li>
 </ul>
 </nav></div>
   </div>
@@ -374,6 +386,7 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
     <div class="image" style="background-image: url(https://www.tuto-carto.fr/images/google-maps/Google-My-Maps-Exemple.jpg);"></div>
     <div class="detail">
       <h2 class="title">Créer une carte avec Google Maps</h2>
+<<<<<<< HEAD
     </div>
   </a>
 </article>
@@ -394,16 +407,25 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
     <div class="image" style="background-image: url(https://www.tuto-carto.fr/images/default.jpg);"></div>
     <div class="detail">
       <h2 class="title">Posts</h2>
+=======
+>>>>>>> 64227f986266e7e6ed001be96d69dd93a712b8ee
     </div>
   </a>
 </article>
 </div>
       
       <div class="sm"><article class="li">
+<<<<<<< HEAD
   <a href="https://www.tuto-carto.fr/" class="clearfix">
     <div class="image" style="background-image: url(https://www.tuto-carto.fr/images/default.jpg);"></div>
     <div class="detail">
       <h2 class="title">Tuto Carto: blog autour des cartes</h2>
+=======
+  <a href="https://www.tuto-carto.fr/post/projections/" class="clearfix">
+    <div class="image" style="background-image: url(https://www.tuto-carto.fr/images/projections/projection-de-lambert.bmp);"></div>
+    <div class="detail">
+      <h2 class="title">Les Projections</h2>
+>>>>>>> 64227f986266e7e6ed001be96d69dd93a712b8ee
     </div>
   </a>
 </article>
@@ -416,6 +438,7 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
 </aside>
 
     </div>
+<<<<<<< HEAD
 
   </div>
 
@@ -453,6 +476,36 @@ Les sciences politiques peuvent utiliser une projection équivalente pour mieux 
     </script>
     
 
+=======
+
+  </div>
+
+      </div>
+
+    <footer class="site">
+        <div id="email" class="email">
+            <h4><span>Si ce contenu vous plaît, il va bientôt exister en ebook. Entrez-votre email pour être au courant de son avancement !</span>
+            </h4>
+            <form class="col-lg-12" id="cartoform">
+                <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+                    <input class="input-email" placeholder="Email" type="text" name="email" id="mce-EMAIL">
+                    <span class="input-group-btn"><button class="button-email" type="submit">OK</button></span>
+                </div>
+            </form>
+        </div>
+      <p>&copy; 2017 <a href="https://www.sylvaindorey.com/consulting">Sylvain Dorey</a></p>
+      <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="https://www.tuto-carto.fr/js/google-sheet.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+>>>>>>> 64227f986266e7e6ed001be96d69dd93a712b8ee
   </body>
 </html>
 
