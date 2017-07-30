@@ -4,17 +4,193 @@
     <title>Tuto Carto: blog autour des cartes </title>
     <link>https://www.tuto-carto.fr/post/index.xml</link>
     <language>en-us</language>
-    <author>map[gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName twitter:xxxxxxx linkedin:xxxxxxxxx website:http://www.foo.com github:xxxxxxx facebook:xxxxxxxxx firstname:Sylvain gender:(fe)?male image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
+    <author>map[lastname:LastName website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx twitter:xxxxxxx github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username]</author>
     <rights>(C) 2017</rights>
-    <updated>2017-04-06 10:33:01 &#43;0700 ICT</updated>
+    <updated>2017-07-28 11:00:21 &#43;0200 CEST</updated>
 
+    
+      
+        <item>
+          <title>Extraire des données d&#39;une carte scannée: 2- Digitaliser</title>
+          <link>https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation/</link>
+          <pubDate>Fri, 28 Jul 2017 11:00:21 CEST</pubDate>
+          <author>map[github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName twitter:xxxxxxx]</author>
+          <guid>https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation/</guid>
+          <description>
+
+&lt;p&gt;Suite de &lt;a href=&#34;https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/&#34;&gt;l&amp;rsquo;article sur l&amp;rsquo;extraction de données depuis une carte scannée&lt;/a&gt;, on va à présent digitaliser les données pour les transformer en un fichier géographique ré-utilisable.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/NVxHxw6WCPs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h1 id=&#34;2-digitalisation&#34;&gt;2- Digitalisation&lt;/h1&gt;
+
+&lt;p&gt;A présent on a notre carte géoréférencée. Elle est toujours en format image, il nous reste à présent à en extraire les données qui nous intéressent. Ici il s&amp;rsquo;agit des polygones représentant les frontières des duchés, on va repasser dessus à la souris et les sauvegarder dans un format géographique, le fichier Shapefile.
+QGIS aide à la digitalisation, notamment en faisant des polygones parfaitement adjacents: on veut que la frontière de l&amp;rsquo;un soit aussi la frontière de l&amp;rsquo;autre, pour celà on utilise la fonction &amp;ldquo;tracing&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Les étapes de la digitalisation sont les suivantes:&lt;/p&gt;
+
+&lt;p&gt;1) Créer une couche dans laquelle on va tracer nos polygones, c&amp;rsquo;est un fichier shapefile&lt;/p&gt;
+
+&lt;p&gt;2) Activer l&amp;rsquo;option snapping (accrochage), qui permet de placer la souris automatiquement sur un noeud quand on est à proximité&lt;/p&gt;
+
+&lt;p&gt;3) Tracer les duchés (polygones)&lt;/p&gt;
+
+&lt;h2 id=&#34;1-créer-une-couche&#34;&gt;1) Créer une couche&lt;/h2&gt;
+
+&lt;p&gt;Pour créer une couche, il suffit de cliquer sur Couches &amp;gt;&amp;gt; Nouvelle Couche Shapefile. Veillez bien ensuite à choisir le type Polygones. A ce stade on peut ajouter des paramètres comme le nom du duché. Ensuite on nomme la couche et on spécifie l&amp;rsquo;endroit où stocker le fichier.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;margin-bottom: 10px;&#34; src=&#34;https://www.tuto-carto.fr/images/bourgogne/creer-une-couche-1.png&#34; alt=&#34;Créer une couche Shapefile dans QGIS&#34;&gt;
+&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/creer-une-couche-2.png&#34; alt=&#34;Créer une couche pour des polygones&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;La couche est prête à recevoir nos polygones.&lt;/p&gt;
+
+&lt;h2 id=&#34;2-activer-l-option-d-accrochage&#34;&gt;2) Activer l&amp;rsquo;option d&amp;rsquo;accrochage&lt;/h2&gt;
+
+&lt;p&gt;Lorsqu&amp;rsquo;on trace des éléments, il s&amp;rsquo;agit de sommets reliés par des arêtes. L&amp;rsquo;option d&amp;rsquo;accrochage permet de spécifier une distance minimum autour d&amp;rsquo;un sommet pour que notre souris s&amp;rsquo;accroche à ce sommet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/options-d-accrochage.png&#34; alt=&#34;Options d&#39;accroche dans QGIS&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-tracer-les-polygones&#34;&gt;3) Tracer les polygones&lt;/h2&gt;
+
+&lt;p&gt;Cette étape n&amp;rsquo;est pas difficile mais peut être un peu laborieuse. Il y a beaucoup de petits éléments qui peuvent être bloquants si on s&amp;rsquo;y perd mais en réalité sont logiques.
+D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l&amp;rsquo;image géoréférencée, les couches peuvent se ré-arranger avec la souris dans le panneau de gauche.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ordre-des-couches.png&#34; alt=&#34;Réordonner les couches dans QGIS&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Ensuite il faut que la couche soit sélectionnée, comme ci-dessus, avant de pouvoir basculer en mode édition.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/mode-edition.png&#34; alt=&#34;Passer en mode édition&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;A présent, on peut cliquer sur Ajouter une entité, et commencer à tracer au dessus de notre polygone en essayant de coller le plus à celui-ci. A la fin, un clique gauche finit le tracé.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;margin-bottom: 10px;&#34; src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-une-entite-1.png&#34; alt=&#34;Ajouter une entité&#34;&gt;
+&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-une-entite-2.png&#34; alt=&#34;Tracer le premier polygone&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour le second polygone, on clique une nouvelle fois sur &amp;ldquo;Ajouter une entité&amp;rdquo;. Le mode tracé est ici primordial ! Il permet de sélectionner deux sommets d&amp;rsquo;un polygone adjacent et d&amp;rsquo;incorporer tous les sommets intermédiaires dans le nouveau polygone.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/option-trace.png&#34; alt=&#34;option tracé dans QGIS&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;On commence donc le second polygone en cliquant sur un des sommets du précédent puis sur un autre plus loin.
+&lt;img style=&#34;margin-bottom: 10px;&#34; src=&#34;https://www.tuto-carto.fr/images/bourgogne/second-polygone-1.png&#34; alt=&#34;Tracer le second polygone avec l&#39;option tracé&#34;&gt;
+&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/second-polygone-2.png&#34; alt=&#34;Fin du second polygone&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;A la fin on a nos duchés.&lt;/p&gt;
+
+&lt;p&gt;Parfois il n&amp;rsquo;est pas facile de voir l&amp;rsquo;image en dessous du polygone à tracer, il peut être utile de changer les couleurs et la transparence du curseur, en allant dans Settings &amp;gt; Options &amp;gt; Digitalization.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Extraire des données d&#39;une carte scannée: 1- Géo-référencer</title>
+          <link>https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/</link>
+          <pubDate>Wed, 12 Jul 2017 17:15:31 CEST</pubDate>
+          <author>map[website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName twitter:xxxxxxx github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username]</author>
+          <guid>https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/</guid>
+          <description>
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/LIAmJBZctt0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;En recherche, la principale source d&amp;rsquo;information reste les articles publiés sur le sujet qu&amp;rsquo;on étudie. Dans ces articles, on peut trouver des cartes produites par l&amp;rsquo;auteur. Ces cartes peuvent être intéressantes à ré-utiliser, mais parfois seulement une partie est intéressante, et même souvent on souhaite modifier certaines informations qui nous semblent incorrectes.&lt;/p&gt;
+
+&lt;p&gt;Un exemple ici avec les frontières des duchés de Bourgogne, la carte les présente tous, et on souhaite utiliser une partie seulement, pour faire une carte zoomée sur un territoire particulier. La carte de droite a été réalisée par Christophe Furon dans le cadre d&amp;rsquo;un &lt;a href=&#34;https://questes.revues.org/4374&#34;&gt;article passionant sur les &amp;ldquo;Gens de guerre en hiver : le cas des Écorcheurs durant l’hiver 1438–1439&amp;rdquo;.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/carte-zoomee-extraction-donnees.png&#34; alt=&#34;Exemple d&#39;extraction de données pour faire une carte zoomée.&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;A partir de la carte brute, on ne peut pas faire beaucoup de modifications, on a alors plusieurs possibilités:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Contacter l&amp;rsquo;auteur pour qu&amp;rsquo;il nous fournisse ses données d&amp;rsquo;origine&lt;/li&gt;
+&lt;li&gt;Utiliser un logiciel pour extraire les données voulues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La première solution est sûrement celle à essayer en premier, ensuite on peut se pencher sur la seconde: comment extraire les données de frontières de cette carte scannée ?&lt;/p&gt;
+
+&lt;p&gt;On a deux choses à faire:&lt;/p&gt;
+
+&lt;p&gt;1) Donner des coordonnées aux points de la carte scannée: c&amp;rsquo;est le géoréférencement. Même si à l&amp;rsquo;oeil nu on peut estimer ou se trouve cette carte sur le globe, pour l&amp;rsquo;utiliser dans un logiciel de cartographie il faut le faire précisément, en donnant les coordonnées réelles de quelques points de la carte.&lt;/p&gt;
+
+&lt;p&gt;2) Extraire les frontières de la carte qui nous intéressent et le sauvegarder dans un document géographique pour pouvoir les réutiliser dans d&amp;rsquo;autres cartes ou même les modifier: c&amp;rsquo;est la digitalisation.&lt;/p&gt;
+
+&lt;h1 id=&#34;1-géoréférencement&#34;&gt;1- Géoréférencement&lt;/h1&gt;
+
+&lt;p&gt;Dans cette étape, on cherche à donner des coordonnées géographiques à chaque point de la carte. Le fichier qu&amp;rsquo;un a est un fichier image, dans mon cas png. Il s&amp;rsquo;agit d&amp;rsquo;une grille de points de couleur appelée pixels. Lorsqu&amp;rsquo;on zoom l&amp;rsquo;image, on les voit apparaître/&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/exemple-pixels.png&#34; alt=&#34;Zoom d&#39;une image pour faire apparaître des pixels.&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Chaque pixel représente une couleur, on souhaite à présent attribuer une coordonnée sur le globe à chacun d&amp;rsquo;entre eux. Pour cela, on va donner à la main quelques coordonnées de points, et le logiciel va calculer pour tous les autres.&lt;/p&gt;
+
+&lt;h2 id=&#34;mise-en-oeuvre-avec-qgis&#34;&gt;Mise en oeuvre avec QGIS&lt;/h2&gt;
+
+&lt;p&gt;Sur la carte qu&amp;rsquo;on souhaite géo-référencée, on a la forme des cotes, des villes et des fleuves. On peut utiliser ces éléments pour donner les coordonnées de certains points. Il est facile de trouver ces données en ligne, allons par exemple sur le site Natural Earth pour y télécharger deux fichiers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Les pays et leurs frontières&lt;/li&gt;
+&lt;li&gt;Les grandes villes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les points des villes ne sont pas très précis, surtout s&amp;rsquo;ils varient dans le temps ou que les villes sont grandes, et les cotes ne sont pas toujours dessinées pareille, mais la précision semble quand même suffisante pour notre besoin. Une fois que les deux fichiers sont téléchargés, on peut les glisser déposer dans QGIS, on devrait avoir l&amp;rsquo;écran suivant (peut être avec des couleurs différentes.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/load-layers.png&#34; alt=&#34;Les couches chargées dans QGIS&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;On va à présent ouvrir l&amp;rsquo;outil Georeferencer de QGIS, il se trouve dans Raster &amp;gt;&amp;gt; Georeferencer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/georeferencer.png&#34; alt=&#34;Le plugin geo-referencer de QGIS&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;S&amp;rsquo;il ne s&amp;rsquo;y trouve pas, c&amp;rsquo;est qu&amp;rsquo;il faut l&amp;rsquo;activer dans Plugins &amp;gt;&amp;gt; Manage Plugin, en tapant georeferencer et en le cochant.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/georeferencer-plugin.png&#34; alt=&#34;Activer l&#39;extension geo-referencer de QGIS&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Une fois que le georeferencer est ouvert, on doit charger l&amp;rsquo;image de la carte.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-image-georeferencer.png&#34; alt=&#34;Charger la carte dans le géo-referencer&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Ensuite, on va cliquer sur un point de la carte facile à repérer, et cliquer sur son homologue dans la fenêtre principale de QGIS où on a chargé les couches des pays et des villes. Dans cet exemple, je clique sur une pointe de terre en angleterre facile à repérer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-un-point-1.png&#34; alt=&#34;Sélectionner un point dans le géo-referencer&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-un-point-2.png&#34; alt=&#34;Aller dans le canvas&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-un-point-3.png&#34; alt=&#34;Sélectionner le point dans le canvas&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-un-point-4.png&#34; alt=&#34;Le point est sauvegardé&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/ajouter-un-point-5.png&#34; alt=&#34;Répéter pour avoir 4 points&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;On répète l&amp;rsquo;étape pour obtenir 5 ou 6 points, en essayant de les séparer le plus possible. J&amp;rsquo;ai choisi les villes de Paris, Reims, Strasbourg et Lyon.&lt;/p&gt;
+
+&lt;p&gt;Ensuite il y a quelques paramètres à définir, deux sont importants, les autres peuvent être laissés tels quel:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;la &lt;a href=&#34;https://www.tuto-carto.fr/post/projections&#34;&gt;projection utilisée&lt;/a&gt;: c&amp;rsquo;est ce qui va permettre de calculer les autres points. Il s&amp;rsquo;agit de la méthode utilisée pour placer les points du globe sur un plan. Pour une carte ancienne, il est important d&amp;rsquo;essayer de la déterminer. Pour une carte actuelle, on peut prendre WGS84 qui est la plus utilisée.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;le nom du fichier image géo-localisé qui sera généré.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Le géoréférencement se lance en cliquant sur le bouton en triangle, et l&amp;rsquo;image vient se placer dans la fenêtre principale. On peut alors contrôler que tout s&amp;rsquo;est bien passé.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/bourgogne/carte-georeferencee.png&#34; alt=&#34;La carte est géo-référencée&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;La deuxième étape est la digitalisation. &lt;a href=&#34;https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation&#34;&gt;L&amp;rsquo;article se trouve ici.&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
           <title>Choisir la position des labels dans QGIS</title>
           <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
-          <pubDate>Thu, 06 Apr 2017 10:33:01 ICT</pubDate>
-          <author>map[image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gender:(fe)?male twitter:xxxxxxx linkedin:xxxxxxxxx website:http://www.foo.com github:xxxxxxx facebook:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName firstname:Sylvain]</author>
+          <pubDate>Thu, 06 Apr 2017 10:33:01 &#43;0700</pubDate>
+          <author>map[firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username github:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male twitter:xxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
           <description>
 
@@ -79,8 +255,8 @@
         <item>
           <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
           <link>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
-          <pubDate>Wed, 05 Apr 2017 11:09:47 ICT</pubDate>
-          <author>map[gender:(fe)?male image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx website:http://www.foo.com github:xxxxxxx facebook:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName twitter:xxxxxxx linkedin:xxxxxxxxx firstname:Sylvain]</author>
+          <pubDate>Wed, 05 Apr 2017 11:09:47 &#43;0700</pubDate>
+          <author>map[username:username github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx twitter:xxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
           <description>
 
@@ -206,8 +382,8 @@ D’autres types sont disponibles: Integer permet de stocker des nombres dans vi
         <item>
           <title>Longitude et Latitude</title>
           <link>https://www.tuto-carto.fr/post/longitude-latitude/</link>
-          <pubDate>Tue, 04 Apr 2017 15:20:35 ICT</pubDate>
-          <author>map[gender:(fe)?male image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName twitter:xxxxxxx linkedin:xxxxxxxxx website:http://www.foo.com github:xxxxxxx facebook:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx firstname:Sylvain]</author>
+          <pubDate>Tue, 04 Apr 2017 15:20:35 &#43;0700</pubDate>
+          <author>map[gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx twitter:xxxxxxx username:username github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png]</author>
           <guid>https://www.tuto-carto.fr/post/longitude-latitude/</guid>
           <description>
 
@@ -262,8 +438,8 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
         <item>
           <title>Créer une carte avec Google Maps</title>
           <link>https://www.tuto-carto.fr/post/google-maps/</link>
-          <pubDate>Tue, 04 Apr 2017 14:34:29 ICT</pubDate>
-          <author>map[gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName twitter:xxxxxxx linkedin:xxxxxxxxx website:http://www.foo.com github:xxxxxxx facebook:xxxxxxxxx firstname:Sylvain gender:(fe)?male image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
+          <pubDate>Tue, 04 Apr 2017 14:34:29 &#43;0700</pubDate>
+          <author>map[gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male twitter:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username github:xxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/google-maps/</guid>
           <description>
 
@@ -325,8 +501,8 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
         <item>
           <title>Les Projections</title>
           <link>https://www.tuto-carto.fr/post/projections/</link>
-          <pubDate>Mon, 03 Apr 2017 16:56:16 ICT</pubDate>
-          <author>map[image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gender:(fe)?male twitter:xxxxxxx linkedin:xxxxxxxxx website:http://www.foo.com github:xxxxxxx facebook:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName firstname:Sylvain]</author>
+          <pubDate>Mon, 03 Apr 2017 16:56:16 &#43;0700</pubDate>
+          <author>map[firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username github:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male twitter:xxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/projections/</guid>
           <description>
 
