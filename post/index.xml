@@ -4,17 +4,17 @@
     <title>Tuto Carto: blog autour des cartes </title>
     <link>https://www.tuto-carto.fr/post/index.xml</link>
     <language>en-us</language>
-    <author>map[lastname:LastName website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx twitter:xxxxxxx github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username]</author>
+    <author>map[gender:(fe)?male lastname:LastName username:username website:http://www.foo.com facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
     <rights>(C) 2017</rights>
-    <updated>2017-07-28 11:00:21 &#43;0200 CEST</updated>
+    <updated>2017-07-28 11:00:21 &#43;0200 &#43;0200</updated>
 
     
       
         <item>
           <title>Extraire des données d&#39;une carte scannée: 2- Digitaliser</title>
           <link>https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation/</link>
-          <pubDate>Fri, 28 Jul 2017 11:00:21 CEST</pubDate>
-          <author>map[github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName twitter:xxxxxxx]</author>
+          <pubDate>Fri, 28 Jul 2017 11:00:21 &#43;0200</pubDate>
+          <author>map[gender:(fe)?male lastname:LastName username:username website:http://www.foo.com gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation/</guid>
           <description>
 
@@ -89,8 +89,8 @@ D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l
         <item>
           <title>Extraire des données d&#39;une carte scannée: 1- Géo-référencer</title>
           <link>https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/</link>
-          <pubDate>Wed, 12 Jul 2017 17:15:31 CEST</pubDate>
-          <author>map[website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName twitter:xxxxxxx github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username]</author>
+          <pubDate>Wed, 12 Jul 2017 17:15:31 &#43;0200</pubDate>
+          <author>map[firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx website:http://www.foo.com gender:(fe)?male lastname:LastName username:username]</author>
           <guid>https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/</guid>
           <description>
 
@@ -189,8 +189,8 @@ D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l
         <item>
           <title>Choisir la position des labels dans QGIS</title>
           <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
-          <pubDate>Thu, 06 Apr 2017 10:33:01 &#43;0700</pubDate>
-          <author>map[firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username github:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male twitter:xxxxxxx]</author>
+          <pubDate>Thu, 06 Apr 2017 10:33:01 ICT</pubDate>
+          <author>map[twitter:xxxxxxx github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName username:username website:http://www.foo.com gender:(fe)?male]</author>
           <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
           <description>
 
@@ -255,8 +255,8 @@ D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l
         <item>
           <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
           <link>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
-          <pubDate>Wed, 05 Apr 2017 11:09:47 &#43;0700</pubDate>
-          <author>map[username:username github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx twitter:xxxxxxx]</author>
+          <pubDate>Wed, 05 Apr 2017 11:09:47 ICT</pubDate>
+          <author>map[linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gender:(fe)?male lastname:LastName username:username website:http://www.foo.com]</author>
           <guid>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
           <description>
 
@@ -382,8 +382,8 @@ D’autres types sont disponibles: Integer permet de stocker des nombres dans vi
         <item>
           <title>Longitude et Latitude</title>
           <link>https://www.tuto-carto.fr/post/longitude-latitude/</link>
-          <pubDate>Tue, 04 Apr 2017 15:20:35 &#43;0700</pubDate>
-          <author>map[gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx twitter:xxxxxxx username:username github:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png]</author>
+          <pubDate>Tue, 04 Apr 2017 15:20:35 ICT</pubDate>
+          <author>map[gender:(fe)?male lastname:LastName username:username website:http://www.foo.com facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/longitude-latitude/</guid>
           <description>
 
@@ -438,8 +438,8 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
         <item>
           <title>Créer une carte avec Google Maps</title>
           <link>https://www.tuto-carto.fr/post/google-maps/</link>
-          <pubDate>Tue, 04 Apr 2017 14:34:29 &#43;0700</pubDate>
-          <author>map[gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male twitter:xxxxxxx firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username github:xxxxxxx]</author>
+          <pubDate>Tue, 04 Apr 2017 14:34:29 ICT</pubDate>
+          <author>map[facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gender:(fe)?male lastname:LastName username:username website:http://www.foo.com]</author>
           <guid>https://www.tuto-carto.fr/post/google-maps/</guid>
           <description>
 
@@ -501,8 +501,8 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
         <item>
           <title>Les Projections</title>
           <link>https://www.tuto-carto.fr/post/projections/</link>
-          <pubDate>Mon, 03 Apr 2017 16:56:16 &#43;0700</pubDate>
-          <author>map[firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png username:username github:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx linkedin:xxxxxxxxx lastname:LastName website:http://www.foo.com gender:(fe)?male twitter:xxxxxxx]</author>
+          <pubDate>Mon, 03 Apr 2017 16:56:16 ICT</pubDate>
+          <author>map[username:username website:http://www.foo.com gender:(fe)?male lastname:LastName github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
           <guid>https://www.tuto-carto.fr/post/projections/</guid>
           <description>
 
