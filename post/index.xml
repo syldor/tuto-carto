@@ -4,7 +4,7 @@
     <title>Tuto Carto: blog autour des cartes </title>
     <link>https://www.tuto-carto.fr/post/index.xml</link>
     <language>en-us</language>
-    <author>map[gender:(fe)?male lastname:LastName username:username website:http://www.foo.com facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
+    <author>map[gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png linkedin:xxxxxxxxx github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain]</author>
     <rights>(C) 2017</rights>
     <updated>2017-07-28 11:00:21 &#43;0200 &#43;0200</updated>
 
@@ -14,7 +14,7 @@
           <title>Extraire des données d&#39;une carte scannée: 2- Digitaliser</title>
           <link>https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation/</link>
           <pubDate>Fri, 28 Jul 2017 11:00:21 &#43;0200</pubDate>
-          <author>map[gender:(fe)?male lastname:LastName username:username website:http://www.foo.com gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
+          <author>map[github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName]</author>
           <guid>https://www.tuto-carto.fr/post/extraire-donnees-2-digitalisation/</guid>
           <description>
 
@@ -90,7 +90,7 @@ D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l
           <title>Extraire des données d&#39;une carte scannée: 1- Géo-référencer</title>
           <link>https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/</link>
           <pubDate>Wed, 12 Jul 2017 17:15:31 &#43;0200</pubDate>
-          <author>map[firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx website:http://www.foo.com gender:(fe)?male lastname:LastName username:username]</author>
+          <author>map[github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png]</author>
           <guid>https://www.tuto-carto.fr/post/extraire-donnees-1-geo-referencer/</guid>
           <description>
 
@@ -190,7 +190,7 @@ D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l
           <title>Choisir la position des labels dans QGIS</title>
           <link>https://www.tuto-carto.fr/post/qgis-position-label/</link>
           <pubDate>Thu, 06 Apr 2017 10:33:01 ICT</pubDate>
-          <author>map[twitter:xxxxxxx github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName username:username website:http://www.foo.com gender:(fe)?male]</author>
+          <author>map[linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain]</author>
           <guid>https://www.tuto-carto.fr/post/qgis-position-label/</guid>
           <description>
 
@@ -256,7 +256,7 @@ D&amp;rsquo;abord, veillez à ce que la couche des polygones soit AU-DESSUS de l
           <title>Les bases de données géographiques (1): qu&#39;est-ce qu&#39;une base de données ?</title>
           <link>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</link>
           <pubDate>Wed, 05 Apr 2017 11:09:47 ICT</pubDate>
-          <author>map[linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gender:(fe)?male lastname:LastName username:username website:http://www.foo.com]</author>
+          <author>map[image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain]</author>
           <guid>https://www.tuto-carto.fr/post/bases-de-donnees-geo-1-bases-de-donnees/</guid>
           <description>
 
@@ -383,7 +383,7 @@ D’autres types sont disponibles: Integer permet de stocker des nombres dans vi
           <title>Longitude et Latitude</title>
           <link>https://www.tuto-carto.fr/post/longitude-latitude/</link>
           <pubDate>Tue, 04 Apr 2017 15:20:35 ICT</pubDate>
-          <author>map[gender:(fe)?male lastname:LastName username:username website:http://www.foo.com facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
+          <author>map[lastname:LastName image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx firstname:Sylvain github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com]</author>
           <guid>https://www.tuto-carto.fr/post/longitude-latitude/</guid>
           <description>
 
@@ -439,7 +439,7 @@ Après les minutes d’arc, on divise encore par 60 pour obtenir les secondes d�
           <title>Créer une carte avec Google Maps</title>
           <link>https://www.tuto-carto.fr/post/google-maps/</link>
           <pubDate>Tue, 04 Apr 2017 14:34:29 ICT</pubDate>
-          <author>map[facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx github:xxxxxxx firstname:Sylvain gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx gender:(fe)?male lastname:LastName username:username website:http://www.foo.com]</author>
+          <author>map[github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName]</author>
           <guid>https://www.tuto-carto.fr/post/google-maps/</guid>
           <description>
 
@@ -502,7 +502,7 @@ On peut accéder et poursuivre l’édition de cartes à travers Google Drive, o
           <title>Les Projections</title>
           <link>https://www.tuto-carto.fr/post/projections/</link>
           <pubDate>Mon, 03 Apr 2017 16:56:16 ICT</pubDate>
-          <author>map[username:username website:http://www.foo.com gender:(fe)?male lastname:LastName github:xxxxxxx firstname:Sylvain facebook:xxxxxxxxx linkedin:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png twitter:xxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]</author>
+          <author>map[github:xxxxxxx twitter:xxxxxxx gender:(fe)?male website:http://www.foo.com firstname:Sylvain linkedin:xxxxxxxxx gravatarhash:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx username:username facebook:xxxxxxxxx gplus:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx lastname:LastName image://www.gravatar.com/avatar/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.png]</author>
           <guid>https://www.tuto-carto.fr/post/projections/</guid>
           <description>
 
@@ -614,17 +614,17 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;h2 id=&#34;projection-conique-de-lambert&#34;&gt;Projection conique de Lambert&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/projection-de-lambert.bmp&#34; alt=&#34;Projection de Lambert&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/projection-de-lambert.png&#34; alt=&#34;Projection de Lambert&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Il s’agit d’une projection conique, ainsi les méridiens convergent tous vers un point unique et le pôle sud prend toute la place en bas de la carte. Elle préserve les angles, ainsi elle fut utilisée par l’artillerie française pendant la guerre 14-18: l’angle de tir en réalité est le même que l’angle de tir sur la carte. C’est la projection officielle pour la france:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/France-projection-Lambert.bmp&#34; alt=&#34;France Projection de Lambert&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/France-projection-Lambert.png&#34; alt=&#34;France Projection de Lambert&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;projection-de-mercator&#34;&gt;Projection de Mercator&lt;/h2&gt;
 
 &lt;p&gt;Il s’agit d’une projection cylindrique, dont le cylindre touche la Terre à l’équateur.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/Projection-Mercator.bmp&#34; alt=&#34;Projection Mercator&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/Projection-Mercator.png&#34; alt=&#34;Projection Mercator&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Comme la projection de Lambert, elle conserve les angles et les formes. C’est ainsi la projection utilisée majoritairement pour la navigation, puisque les caps sur la carte sont les mêmes qu’en réalité.&lt;/p&gt;
 
@@ -638,7 +638,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;La projection de Gall-Peters presèrve les surfaces, on dit qu’elle est équivalente. C’est une projection cylindrique.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/Projection-de-Gall-Peters.bmp&#34; alt=&#34;Projection de Gall-Peters&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/Projection-de-Gall-Peters.png&#34; alt=&#34;Projection de Gall-Peters&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ainsi les surfaces représentées sont proches de la réalité et permettent de mieux visualiser les superficies réelles des différentes pays/continents. Ainsi, on peut comparer le groenland et l’afrique, qui sont de superficie très différente, ce que la projection Mercator ne rend pas.&lt;/p&gt;
 
@@ -654,7 +654,7 @@ WGS84: basé sur l’ellipsoïde du même nom, il est utilisé dans le système 
 
 &lt;p&gt;Une autre propriété intéressante est que le chemin le plus court sur une sphère étant un arc de cercle, ce sont des droites sur les cartes gnomoniques. Ce n’est pas le cas sur les autres projections, ainsi les trajectoires des avions paraissent incurvées quand elles sont représentées sur une projection différente alors qu’ils vont en réalité au plus court.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/projection-gnomonique.bmp&#34; alt=&#34;Projection Gnomonique&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tuto-carto.fr/images/projections/projection-gnomonique.png&#34; alt=&#34;Projection Gnomonique&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;récapitulatif&#34;&gt;Récapitulatif&lt;/h1&gt;
 
